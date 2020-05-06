@@ -388,6 +388,174 @@ entries:
       url: /server-density.html
       output: web, pdf
 
+    - title: SignalFx
+      url: /signalfx.html
+      output: web, pdf
+
+    - title: Site24x7
+      url: /site24x7.html
+      output: web, pdf
+
+    - title: Slack Alert Source Integration
+      url: /slack-as-an-alert-source.html
+      output: web, pdf
+
+    - title: Splunk
+      url: /splunk.html
+      output: web, pdf
+
+    - title: Sqreen
+      url: /sqreen.html
+      output: web, pdf
+
+    - title: Stackdriver
+      url: /stackdriver.html
+      output: web, pdf
+
+    - title: StatusCake
+      url: /statuscake.html
+      output: web, pdf
+
+    - title: Sumo Logic
+      url: /sumo-logic.html
+      output: web, pdf
+
+    - title: Sysdig Monitor
+      url: /sysdig-monitor.html
+      output: web, pdf
+
+    - title: Uptime Robot
+      url: /uptime-robot.html
+      output: web, pdf
+
+    - title: Zabbix
+      url: /zabbix-integration-guide.html
+      output: web, pdf
+
+  - title: Integrations (Extensions)
+    output: web, pdf
+
+    folderitems:
+    - title: CircleCI Integration
+      url: /circleci-integration.html
+      output: web, pdf
+
+    - title: GitHub
+      url: /github.html
+      output: web, pdf
+
+    - title: Google Hangouts
+      url: /hangouts.html
+      output: web, pdf
+
+    - title: Jira Cloud
+      url: /jira-cloud.html
+      output: web, pdf
+    
+    - title: Jira Server (On-Premise)
+      url: /jira-server-on-premise.html
+      output: web, pdf
+
+    - title: Slack
+      url: /slack.html
+      output: web, pdf
+
+  - title: SSO
+    output: web, pdf
+
+    folderitems:
+    - title: Azure Active Directory SSO
+      url: /azure-active-directory-sso.html
+      output: web, pdf
+
+    - title: Google SSO
+      url: /google-sso.html
+      output: web, pdf
+
+    - title: Microsoft ADFS SSO
+      url: /adfs-sso.html
+      output: web, pdf
+
+    - title: Okta SSO
+      url: /okta-sso-integration.html
+      output: web, pdf
+
+    - title: SAML 2.0 based SSO
+      url: /saml-sso.html
+      output: web, pdf
+
+  - title: Mobile App
+    output: web, pdf
+
+    folderitems:
+    - title: Using the Mobile App
+      url: /using-the-mobile-app.html
+      output: web, pdf
+
+    - title: Pin messages from War Room to the Incident Timeline
+      url: /pin-messages-from-warroom-to-timeline-1.html
+      output: web, pdf
+
+    - title: View Schedules on the Mobile App
+      url: /mobile-app-see-who-is-on-call.html
+      output: web, pdf
+
+  - title: Squadcast Actions
+    output: web, pdf
+
+    folderitems:
+    - title: What are Squadcast Actions?
+      url: /what-are-squadcast-actions.html
+      output: web, pdf
+
+    - title: CircleCI Actions
+      url: /circleci-actions.html
+      output: web, pdf
+
+    - title: Squadcast Runbooks (Depricated)
+      url: /squadcast-runbooks.html
+      output: web, pdf
+
+    - title: How to Video - Squadcast Actions
+      url: /how-to-video-squadcast-actions.html
+      output: web, pdf
+
+  - title: Squadcast API Documentation
+    output: web, pdf
+
+    folderitems:
+    - title: Squadcast Public API - Refresh Token
+      url: /squadcast-public-api.html
+      output: web, pdf
+
+    - title: Squadcast API Documentation
+      external_url: https://apidocs.squadcast.com
+      output: web, pdf
+
+  - title: Managing your Squadcast Account
+    output: web, pdf
+
+    folderitems:
+    - title: Deactivating your Squadcast Account
+      url: /deactivating-your-squadcast-account.html
+      output: web, pdf
+    
+    - title: Deleting your Squadcast Account
+      url: /deleting-your-squadcast-account.html
+      output: web, pdf
+
+    - title: Incident Rate Limiting
+      url: /incident-rate-limiting.html
+      output: web, pdf
+
+    - title: Organizations
+      url: /squadcast-organizations.html
+      output: web, pdf
+
+    - title: Upgrading to a Paid Plan
+      url: /upgrading-to-a-paid-plan.html
+      output: web, pdf
+
     #- title: Glossary layout
     #  url: /mydoc_glossary.html
     #  output: web, pdf

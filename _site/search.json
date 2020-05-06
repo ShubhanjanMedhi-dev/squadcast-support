@@ -103,6 +103,17 @@
 
 
 {
+"title": "Azure Active Directory SSO",
+"tags": "ssoazure active directory",
+"keywords": "",
+"url": "azure-active-directory-sso.html",
+"summary": "Enable Azure Active Directory Single Sign On (SSO) for your Squadcast organisation"
+}
+,
+
+
+
+{
 "title": "Azure Monitor",
 "tags": "integrationazure monitor",
 "keywords": "",
@@ -130,6 +141,28 @@
 "keywords": "",
 "url": "checkmk.html",
 "summary": "Get Alerts from Checkmk into Squadcast"
+}
+,
+
+
+
+{
+"title": "CircleCI Actions",
+"tags": "circleci actions",
+"keywords": "",
+"url": "circleci-actions.html",
+"summary": "Take CircleCI actions directly from incidents"
+}
+,
+
+
+
+{
+"title": "CircleCI Integration",
+"tags": "integrationcircleci",
+"keywords": "",
+"url": "circleci-integration.html",
+"summary": "Integrate CircleCI to perform actions directly from Squadcast"
 }
 ,
 
@@ -246,11 +279,33 @@
 
 
 {
+"title": "Deactivating your  Squadcast Account",
+"tags": "deactivatingaccount",
+"keywords": "",
+"url": "deactivating-your-squadcast-account.html",
+"summary": "If you have decided to cancel your subscription to Squadcast, this document will help you understand how to do so"
+}
+,
+
+
+
+{
 "title": "Deleting a Service",
 "tags": "deleting servicedeletingservice",
 "keywords": "",
 "url": "deleting-a-service.html",
 "summary": "Deleting a Service"
+}
+,
+
+
+
+{
+"title": "Deleting your Squadcast Account",
+"tags": "deletingaccount",
+"keywords": "",
+"url": "deleting-your-squadcast-account.html",
+"summary": "If you have decided to permanently delete your subscription to Squadcast, this document will help you understand how to do so"
 }
 ,
 
@@ -349,11 +404,44 @@
 
 
 {
+"title": "GitHub",
+"tags": "integrationgithub",
+"keywords": "",
+"url": "github.html",
+"summary": "Enable Squadcast to track user activity (commits) on Github"
+}
+,
+
+
+
+{
 "title": "Glossary",
 "tags": "troubleshooting",
 "keywords": "",
 "url": "glossary.html",
 "summary": "This guide will walk you through the terminologies and their meanings used in Squadcast."
+}
+,
+
+
+
+{
+"title": "Google Hangouts",
+"tags": "integrationgoogle hangouts",
+"keywords": "",
+"url": "hangouts.html",
+"summary": "Ack, Resolve, Re-assign, Snooze, Escalate - everything from Google Hangouts."
+}
+,
+
+
+
+{
+"title": "Google SSO",
+"tags": "ssogoogle",
+"keywords": "",
+"url": "google-sso.html",
+"summary": "Use G Suite credentials to sign in to Squadcast via Single Sign-On (SSO)."
 }
 ,
 
@@ -393,6 +481,17 @@
 
 
 {
+"title": "How to Video - Squadcast Actions",
+"tags": "how to videosquadcast actions",
+"keywords": "",
+"url": "how-to-video-squadcast-actions.html",
+"summary": "Here's a how-to-video on how you can use Squadcast Actions & Runbooks for faster incident resolution"
+}
+,
+
+
+
+{
 "title": "Incident Dashboard",
 "tags": "incident dashboard",
 "keywords": "",
@@ -409,6 +508,17 @@
 "keywords": "",
 "url": "incident-details.html",
 "summary": "Get more details about the incident"
+}
+,
+
+
+
+{
+"title": "Incident Rate Limiting",
+"tags": "rate limiting",
+"keywords": "",
+"url": "incident-rate-limiting.html",
+"summary": "Limit the number of requests a client can make"
 }
 ,
 
@@ -492,11 +602,33 @@
 
 
 {
+"title": "Jira Cloud",
+"tags": "integrationjira cloud",
+"keywords": "",
+"url": "jira-cloud.html",
+"summary": "Create tickets in JIRA with the incidents from Squadcast and sync status bidirectionally"
+}
+,
+
+
+
+{
 "title": "Jira Cloud Alert Source",
 "tags": "integrationjira cloud",
 "keywords": "",
 "url": "jira-cloud-alert-source.html",
 "summary": "Get alerts from Jira Cloud into Squadcast"
+}
+,
+
+
+
+{
+"title": "Jira Server (On-Premise)",
+"tags": "integrationjira server",
+"keywords": "",
+"url": "jira-server-on-premise.html",
+"summary": "Create issues in JIRA with the incidents from Squadcast and vice versa and also sync the status bidirectionally."
 }
 ,
 
@@ -613,6 +745,17 @@
 
 
 {
+"title": "Microsoft ADFS SSO",
+"tags": "ssomicrosoft adfs",
+"keywords": "",
+"url": "adfs-sso.html",
+"summary": "Enable Microsoft ADFS Single Sign On (SSO) for your Squadcast organisation"
+}
+,
+
+
+
+{
 "title": "MongoDB Atlas / Cloud Manager",
 "tags": "integrationmongodb atlascloud manager",
 "keywords": "",
@@ -656,6 +799,28 @@
 
 
 
+{
+"title": "Okta SSO",
+"tags": "ssookta",
+"keywords": "",
+"url": "okta-sso-integration.html",
+"summary": "Enable Okta Single Sign On (SSO) for your Squadcast organisation"
+}
+,
+
+
+
+
+
+{
+"title": "Organizations",
+"tags": "organizations",
+"keywords": "",
+"url": "squadcast-organizations.html",
+"summary": "Organizations in Squadcast"
+}
+,
+
 
 
 {
@@ -675,6 +840,17 @@
 "keywords": "",
 "url": "papertrail.html",
 "summary": "Send events to Squadcast from Papertrail"
+}
+,
+
+
+
+{
+"title": "Pin Messages from War Room to the Incident Timeline",
+"tags": "mobile appwar room",
+"keywords": "",
+"url": "pin-messages-from-warroom-to-timeline-1.html",
+"summary": "Pin and unpin your War Room messages to the Incident Timeline."
 }
 ,
 
@@ -760,6 +936,17 @@
 
 
 {
+"title": "SAML 2.0 based SSO",
+"tags": "ssosaml 2.0",
+"keywords": "",
+"url": "saml-sso.html",
+"summary": "Enable Single Sign On (SSO) for your organization with any SAML 2.0 based SSO"
+}
+,
+
+
+
+{
 "title": "Scheduled Overrides (Multiple Alert Forwarding)",
 "tags": "alert forwarding",
 "keywords": "",
@@ -827,6 +1014,50 @@
 
 
 
+{
+"title": "SignalFx",
+"tags": "integrationsignalfx",
+"keywords": "",
+"url": "signalfx.html",
+"summary": "Get SignalFx alerts into Squadcast"
+}
+,
+
+
+
+{
+"title": "Site24x7",
+"tags": "integrationsite24x7",
+"keywords": "",
+"url": "site24x7.html",
+"summary": "Get alerts from Site24x7 (a service by Zoho Corp) into Squadcast"
+}
+,
+
+
+
+
+
+{
+"title": "Slack",
+"tags": "integrationslack",
+"keywords": "",
+"url": "slack.html",
+"summary": "Trigger, Ack, Resolve, Re-assign, Snooze, Escalate - everything from Slack."
+}
+,
+
+
+
+{
+"title": "Slack Alert Source Integration",
+"tags": "integrationslack",
+"keywords": "",
+"url": "slack-as-an-alert-source.html",
+"summary": "Slack Alert Source"
+}
+,
+
 
 
 {
@@ -841,11 +1072,88 @@
 
 
 {
+"title": "Splunk",
+"tags": "integrationsplunk",
+"keywords": "",
+"url": "splunk.html",
+"summary": "Get Splunk alerts into Squadcast"
+}
+,
+
+
+
+{
+"title": "Sqreen",
+"tags": "integrationsqreen",
+"keywords": "",
+"url": "sqreen.html",
+"summary": "Get alerts from Sqreen into Squadcast"
+}
+,
+
+
+
+{
+"title": "Squadcast Public API - Refresh Token",
+"tags": "api",
+"keywords": "",
+"url": "squadcast-public-api.html",
+"summary": "Generate Refresh token to access Squadcast API"
+}
+,
+
+
+
+{
+"title": "Squadcast Runbooks (Deprecated)",
+"tags": "runbooks",
+"keywords": "",
+"url": "squadcast-runbooks.html",
+"summary": "Execute Squadcast Runbooks on your servers directly from an incident"
+}
+,
+
+
+
+{
+"title": "Stackdriver",
+"tags": "integrationstackdriver",
+"keywords": "",
+"url": "stackdriver.html",
+"summary": "Send events to Squadcast from Google Stackdriver"
+}
+,
+
+
+
+{
+"title": "StatusCake",
+"tags": "integrationstatuscake",
+"keywords": "",
+"url": "statuscake.html",
+"summary": "Get alerts from StatusCake into Squadcast"
+}
+,
+
+
+
+{
 "title": "StatusPage",
 "tags": "status page",
 "keywords": "",
 "url": "statuspage.html",
 "summary": "Let your customers know how your service is doing without them having to ask you about it"
+}
+,
+
+
+
+{
+"title": "Sumo Logic",
+"tags": "integrationsumo logic",
+"keywords": "",
+"url": "sumo-logic.html",
+"summary": "Get alerts from Sumo Logic into Squadcast"
 }
 ,
 
@@ -868,6 +1176,17 @@
 "keywords": "",
 "url": "suppression-rules.html",
 "summary": "Avoid Alert Fatigue with Suppression Rules"
+}
+,
+
+
+
+{
+"title": "Sysdig Monitor",
+"tags": "integrationsysdig monitor",
+"keywords": "",
+"url": "sysdig-monitor.html",
+"summary": "Get alerts from Sysdig Monitor into Squadcast"
 }
 ,
 
@@ -911,6 +1230,72 @@
 
 
 
+
+
+
+{
+"title": "Upgrading to a Paid Plan",
+"tags": "upgradeaccount",
+"keywords": "",
+"url": "upgrading-to-a-paid-plan.html",
+"summary": "If you love the platform and want to bring in more of your team to make use of all the features, this document will help you do just that"
+}
+,
+
+
+
+{
+"title": "Uptime Robot",
+"tags": "integrationuptime robot",
+"keywords": "",
+"url": "uptime-robot.html",
+"summary": "Get Alerts from Uptime Robot into Squadcast"
+}
+,
+
+
+
+{
+"title": "Using the Mobile App",
+"tags": "mobile app",
+"keywords": "",
+"url": "using-the-mobile-app.html",
+"summary": "This document briefly explains all that you can do on our native mobile application available for both iOS and Android."
+}
+,
+
+
+
+{
+"title": "View Schedules on the Mobile App",
+"tags": "mobile appschedules",
+"keywords": "",
+"url": "mobile-app-see-who-is-on-call.html",
+"summary": "See who is on-call on the Squadcast Mobile App"
+}
+,
+
+
+
+{
+"title": "What are Squadcast Actions?",
+"tags": "squadcast actions",
+"keywords": "",
+"url": "what-are-squadcast-actions.html",
+"summary": "Squadcast Actions lets you take actions directly from Squadcast as a response to incidents."
+}
+,
+
+
+
+{
+"title": "Zabbix",
+"tags": "integrationzabbix",
+"keywords": "",
+"url": "zabbix-integration-guide.html",
+"summary": "Send events to Squadcast from Zabbix"
+}
+,
 
 
 

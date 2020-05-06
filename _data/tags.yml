@@ -89,3 +89,34 @@ allowed-tags:
   - sensu
   - sentry
   - server density
+  - signalfx
+  - site24x7
+  - slack
+  - splunk
+  - sqreen
+  - stackdriver
+  - statuscake
+  - sumo logic
+  - sysdig monitor
+  - uptime robot
+  - zabbix
+  - circleci
+  - github
+  - google hangouts
+  - azure active directory
+  - sso
+  - google
+  - microsoft adfs
+  - okta
+  - saml 2.0
+  - mobile app
+  - squadcast actions
+  - circleci actions
+  - runbooks
+  - how to video
+  - deactivating
+  - account
+  - deleting
+  - rate limiting
+  - organizations
+  - upgrade

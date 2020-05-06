@@ -64,6 +64,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/azure-active-directory-sso.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/azure-monitor.html</loc>
   </url>
   
@@ -77,6 +83,18 @@
   
   <url>
     <loc>http://localhost:4000/checkmk.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/circleci-actions.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/circleci-integration.html</loc>
   </url>
   
   
@@ -142,7 +160,19 @@
   
   
   <url>
+    <loc>http://localhost:4000/deactivating-your-squadcast-account.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/deleting-a-service.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/deleting-your-squadcast-account.html</loc>
   </url>
   
   
@@ -200,7 +230,25 @@
   
   
   <url>
+    <loc>http://localhost:4000/github.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/glossary.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hangouts.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/google-sso.html</loc>
   </url>
   
   
@@ -224,6 +272,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/how-to-video-squadcast-actions.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/incident-dashboard.html</loc>
   </url>
   
@@ -231,6 +285,12 @@
   
   <url>
     <loc>http://localhost:4000/incident-details.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/incident-rate-limiting.html</loc>
   </url>
   
   
@@ -278,7 +338,19 @@
   
   
   <url>
+    <loc>http://localhost:4000/jira-cloud.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/jira-cloud-alert-source.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/jira-server-on-premise.html</loc>
   </url>
   
   
@@ -344,6 +416,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/adfs-sso.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/mongodb-atlas-cloud-manager.html</loc>
   </url>
   
@@ -367,6 +445,18 @@
   
   
   
+  <url>
+    <loc>http://localhost:4000/okta-sso-integration.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/squadcast-organizations.html</loc>
+  </url>
+  
   
   
   <url>
@@ -377,6 +467,12 @@
   
   <url>
     <loc>http://localhost:4000/papertrail.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pin-messages-from-warroom-to-timeline-1.html</loc>
   </url>
   
   
@@ -426,6 +522,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/saml-sso.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/alert-forwarding.html</loc>
   </url>
   
@@ -463,6 +565,30 @@
   
   
   
+  <url>
+    <loc>http://localhost:4000/signalfx.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/site24x7.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/slack.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/slack-as-an-alert-source.html</loc>
+  </url>
+  
   
   
   <url>
@@ -472,7 +598,49 @@
   
   
   <url>
+    <loc>http://localhost:4000/splunk.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/sqreen.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/squadcast-public-api.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/squadcast-runbooks.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/stackdriver.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/statuscake.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/statuspage.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/sumo-logic.html</loc>
   </url>
   
   
@@ -485,6 +653,12 @@
   
   <url>
     <loc>http://localhost:4000/suppression-rules.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/sysdig-monitor.html</loc>
   </url>
   
   
@@ -522,6 +696,42 @@
   
   
   
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/upgrading-to-a-paid-plan.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/uptime-robot.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/using-the-mobile-app.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/mobile-app-see-who-is-on-call.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/what-are-squadcast-actions.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/zabbix-integration-guide.html</loc>
+  </url>
   
   
 </urlset>
