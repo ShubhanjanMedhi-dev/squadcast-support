@@ -4,7 +4,7 @@ summary: "Get Cisco DNAC alerts into Squadcast"
 tags: [integration, cicso dnac]
 keywords:
 sidebar: mydoc_sidebar
-permalink: cisco-dnac.html
+permalink: docs/cisco-dnac.html
 folder: mydoc
 ---
 

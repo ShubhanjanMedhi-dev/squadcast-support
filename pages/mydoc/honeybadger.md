@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from Honeybadger into Squadcast"
 sidebar: mydoc_sidebar
-permalink: honeybadger.html
+permalink: docs/honeybadger.html
 folder: mydoc
 ---
 

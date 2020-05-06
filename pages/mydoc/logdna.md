@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from LogDNA into Squadcast"
 sidebar: mydoc_sidebar
-permalink: logdna.html
+permalink: docs/logdna.html
 folder: mydoc
 ---
 

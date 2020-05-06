@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Organizations in Squadcast"
 sidebar: mydoc_sidebar
-permalink: squadcast-organizations.html
+permalink: docs/squadcast-organizations.html
 folder: mydoc
 ---
 

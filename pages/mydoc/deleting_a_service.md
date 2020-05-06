@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Deleting a Service"
 sidebar: mydoc_sidebar
-permalink: deleting-a-service.html
+permalink: docs/deleting-a-service.html
 folder: mydoc
 ---
 

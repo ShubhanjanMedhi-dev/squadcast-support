@@ -2,7 +2,7 @@
 title: Datadog
 tags: [integration, datadog]
 sidebar: mydoc_sidebar
-permalink: datadog.html
+permalink: docs/datadog.html
 summary: "Send events to Squadcast from Datadog"
 folder: mydoc
 ---

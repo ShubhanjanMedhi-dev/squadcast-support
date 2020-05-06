@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from Freshping into Squadcast"
 sidebar: mydoc_sidebar
-permalink: freshping.html
+permalink: docs/freshping.html
 folder: mydoc
 ---
 

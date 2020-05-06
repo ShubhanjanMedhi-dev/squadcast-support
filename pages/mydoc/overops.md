@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from OverOps into Squadcast"
 sidebar: mydoc_sidebar
-permalink: overops.html
+permalink: docs/overops.html
 folder: mydoc
 ---
 

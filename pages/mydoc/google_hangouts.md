@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Ack, Resolve, Re-assign, Snooze, Escalate - everything from Google Hangouts."
 sidebar: mydoc_sidebar
-permalink: hangouts.html
+permalink: docs/hangouts.html
 folder: mydoc
 ---
 

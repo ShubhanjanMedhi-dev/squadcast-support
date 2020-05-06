@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from Sqreen into Squadcast"
 sidebar: mydoc_sidebar
-permalink: sqreen.html
+permalink: docs/sqreen.html
 folder: mydoc
 ---
 

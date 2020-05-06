@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Edit your account details and notification preferences"
 sidebar: mydoc_sidebar
-permalink: set-up-your-profile.html
+permalink: docs/set-up-your-profile.html
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get SignalFx alerts into Squadcast"
 sidebar: mydoc_sidebar
-permalink: signalfx.html
+permalink: docs/signalfx.html
 folder: mydoc
 ---
 

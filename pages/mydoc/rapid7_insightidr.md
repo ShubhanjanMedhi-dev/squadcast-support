@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from Rapid7 InsightIDR into Squadcast"
 sidebar: mydoc_sidebar
-permalink: rapid7-insightidr.html
+permalink: docs/rapid7-insightidr.html
 folder: mydoc
 ---
 

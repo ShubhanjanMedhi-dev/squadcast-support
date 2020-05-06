@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get Alerts from Uptime Robot into Squadcast"
 sidebar: mydoc_sidebar
-permalink: uptime-robot.html
+permalink: docs/uptime-robot.html
 folder: mydoc
 ---
 

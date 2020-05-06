@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from Prometheus"
 sidebar: mydoc_sidebar
-permalink: prometheus.html
+permalink: docs/prometheus.html
 folder: mydoc
 ---
 

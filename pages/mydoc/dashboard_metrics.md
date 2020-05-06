@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "What do these metrics mean and how are the dashboard metrics calculated?"
 sidebar: mydoc_sidebar
-permalink: dashboard-metrics.html
+permalink: docs/dashboard-metrics.html
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from Server Density"
 sidebar: mydoc_sidebar
-permalink: server-density.html
+permalink: docs/server-density.html
 folder: mydoc
 ---
 

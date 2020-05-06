@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Send events to Squadcast from CopperEgg"
 sidebar: mydoc_sidebar
-permalink: copperegg.html
+permalink: docs/copperegg.html
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Get Alerts from Checkmk into Squadcast"
 sidebar: mydoc_sidebar
-permalink: checkmk.html
+permalink: docs/checkmk.html
 folder: mydoc
 ---
 

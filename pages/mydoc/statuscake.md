@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from StatusCake into Squadcast"
 sidebar: mydoc_sidebar
-permalink: statuscake.html
+permalink: docs/statuscake.html
 folder: mydoc
 ---
 

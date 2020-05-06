@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Trigger a Squadcast Incident for any failed UI tests from Ghost Inspector"
 sidebar: mydoc_sidebar
-permalink: ghost-inspector.html
+permalink: docs/ghost-inspector.html
 folder: mydoc
 ---
 

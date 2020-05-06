@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts to Squadcast from Graylog"
 sidebar: mydoc_sidebar
-permalink: graylog.html
+permalink: docs/graylog.html
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get CloudTrail alerts into Squadcast using CloudWatch and SNS endpoints"
 sidebar: mydoc_sidebar
-permalink: aws-cloudtrail-via-cloudwatch.html
+permalink: docs/aws-cloudtrail-via-cloudwatch.html
 folder: mydoc
 ---
 

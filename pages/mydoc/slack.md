@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Trigger, Ack, Resolve, Re-assign, Snooze, Escalate - everything from Slack."
 sidebar: mydoc_sidebar
-permalink: slack.html
+permalink: docs/slack.html
 folder: mydoc
 ---
 

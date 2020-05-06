@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from AWS Cloudwatch (Amazon Web Services)"
 sidebar: mydoc_sidebar
-permalink: amazon-cloudwatch-aws.html
+permalink: docs/amazon-cloudwatch-aws.html
 folder: mydoc
 ---
 

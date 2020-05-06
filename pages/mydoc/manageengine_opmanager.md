@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from ManageEngine OpManager into Squadcast"
 sidebar: mydoc_sidebar
-permalink: manageengine-opmanager.html
+permalink: docs/manageengine-opmanager.html
 folder: mydoc
 ---
 

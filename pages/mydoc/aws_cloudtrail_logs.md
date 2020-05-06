@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Get CloudTrail log creation alerts into Squadcast using SNS endpoints"
 sidebar: mydoc_sidebar
-permalink: aws-cloudtrail-logs.html
+permalink: docs/aws-cloudtrail-logs.html
 folder: mydoc
 ---
 

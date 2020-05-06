@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from Google Stackdriver"
 sidebar: mydoc_sidebar
-permalink: stackdriver.html
+permalink: docs/stackdriver.html
 folder: mydoc
 ---
 

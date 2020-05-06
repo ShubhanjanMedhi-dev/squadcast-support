@@ -5,7 +5,7 @@ last_updated:
 keywords:
 summary: "Send events to Squadcast using version 2 of the alerts API (APIv2)"
 sidebar: mydoc_sidebar
-permalink: apiv2.html
+permalink: docs/apiv2.html
 folder: mydoc
 ---
 

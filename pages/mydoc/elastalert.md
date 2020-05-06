@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Get alerts from Elastic into Squadcast (using ElastAlert)"
 sidebar: mydoc_sidebar
-permalink: elastalert.html
+permalink: docs/elastalert.html
 folder: mydoc
 ---
 

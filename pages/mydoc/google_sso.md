@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Use G Suite credentials to sign in to Squadcast via Single Sign-On (SSO)."
 sidebar: mydoc_sidebar
-permalink: google-sso.html
+permalink: docs/google-sso.html
 folder: mydoc
 ---
 

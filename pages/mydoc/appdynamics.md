@@ -4,7 +4,7 @@ tags: [integration, appdynamics]
 keywords:
 summary: "Get Alerts into Squadcast from AppDynamics"
 sidebar: mydoc_sidebar
-permalink: appdynamics.html
+permalink: docs/appdynamics.html
 folder: mydoc
 ---
 

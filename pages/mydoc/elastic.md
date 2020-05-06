@@ -1,6 +1,6 @@
 ---
 title: Elastic
-permalink: elastic.html
+permalink: docs/elastic.html
 sidebar: mydoc_sidebar
 tags: [integration, elastic]
 keywords:

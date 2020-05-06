@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from Jira Server into Squadcast"
 sidebar: mydoc_sidebar
-permalink: jira-server-alert-source.html
+permalink: docs/jira-server-alert-source.html
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Trigger a Squadcast Incident for any failed tests from Runscope"
 sidebar: mydoc_sidebar
-permalink: runscope.html
+permalink: docs/runscope.html
 folder: mydoc
 ---
 

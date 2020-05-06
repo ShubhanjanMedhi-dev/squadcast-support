@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Limit the number of requests a client can make"
 sidebar: mydoc_sidebar
-permalink: incident-rate-limiting.html
+permalink: docs/incident-rate-limiting.html
 folder: mydoc
 ---
 

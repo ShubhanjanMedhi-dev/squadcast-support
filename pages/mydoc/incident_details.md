@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Get more details about the incident"
 sidebar: mydoc_sidebar
-permalink: incident-details.html
+permalink: docs/incident-details.html
 folder: mydoc
 ---
 

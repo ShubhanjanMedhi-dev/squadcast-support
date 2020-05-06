@@ -5,7 +5,7 @@ last_updated:
 keywords: 
 summary: "Get alerts from Azure Monitor into Squadcast"
 sidebar: mydoc_sidebar
-permalink: azure-monitor.html
+permalink: docs/azure-monitor.html
 folder: mydoc
 ---
 

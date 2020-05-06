@@ -6,7 +6,7 @@ last_updated:
 datatable: 
 summary: "Notification rules define how and when you are notified when an incident is assigned to you."
 sidebar: mydoc_sidebar
-permalink: notification-rules.html
+permalink: docs/notification-rules.html
 folder: mydoc
 ---
 

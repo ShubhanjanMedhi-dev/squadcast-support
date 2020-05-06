@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from Papertrail"
 sidebar: mydoc_sidebar
-permalink: papertrail.html
+permalink: docs/papertrail.html
 folder: mydoc
 ---
 

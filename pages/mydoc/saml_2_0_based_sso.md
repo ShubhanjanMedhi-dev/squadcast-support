@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Enable Single Sign On (SSO) for your organization with any SAML 2.0 based SSO"
 sidebar: mydoc_sidebar
-permalink: saml-sso.html
+permalink: docs/saml-sso.html
 folder: mydoc
 ---
 

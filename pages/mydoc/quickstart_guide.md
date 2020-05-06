@@ -5,7 +5,7 @@ keywords:
 summary: "Take your first steps towards incident management using Squadcast."
 sidebar: mydoc_sidebar
 part: Getting_Started
-permalink: getting-started.html
+permalink: docs/getting-started.html
 folder: mydoc
 ---
 

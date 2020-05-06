@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Send events to Squadcast using an API"
 sidebar: mydoc_sidebar
-permalink: api.html
+permalink: docs/api.html
 folder: mydoc
 ---
 

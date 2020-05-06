@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from Pingdom"
 sidebar: mydoc_sidebar
-permalink: pingdom.html
+permalink: docs/pingdom.html
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from Sumo Logic into Squadcast"
 sidebar: mydoc_sidebar
-permalink: sumo-logic.html
+permalink: docs/sumo-logic.html
 folder: mydoc
 ---
 

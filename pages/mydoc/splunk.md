@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get Splunk alerts into Squadcast"
 sidebar: mydoc_sidebar
-permalink: splunk.html
+permalink: docs/splunk.html
 folder: mydoc
 ---
 

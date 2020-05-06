@@ -6,7 +6,7 @@ keywords:
 summary: "Event tagging can help you add relevant information to incoming incidents to make it more context-rich for the user"
 last_updated:
 sidebar: mydoc_sidebar
-permalink: event-tagging.html
+permalink: docs/event-tagging.html
 folder: mydoc
 ---
 

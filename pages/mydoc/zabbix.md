@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from Zabbix"
 sidebar: mydoc_sidebar
-permalink: zabbix-integration-guide.html
+permalink: docs/zabbix-integration-guide.html
 folder: mydoc
 ---
 

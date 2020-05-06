@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Execute Squadcast Runbooks on your servers directly from an incident"
 sidebar: mydoc_sidebar
-permalink: squadcast-runbooks.html
+permalink: docs/squadcast-runbooks.html
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Route your MongoDB Atlas / Cloud manager alerts to Squadcast"
 sidebar: mydoc_sidebar
-permalink: mongodb-atlas-cloud-manager.html
+permalink: docs/mongodb-atlas-cloud-manager.html
 folder: mydoc
 ---
 

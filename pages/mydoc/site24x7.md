@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from Site24x7 (a service by Zoho Corp) into Squadcast"
 sidebar: mydoc_sidebar
-permalink: site24x7.html
+permalink: docs/site24x7.html
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from Email"
 sidebar: mydoc_sidebar
-permalink: email.html
+permalink: docs/email.html
 folder: mydoc
 ---
 

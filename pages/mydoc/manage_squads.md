@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Everything you need to know about Squads"
 sidebar: mydoc_sidebar
-permalink: squads.html
+permalink: docs/squads.html
 folder: mydoc
 ---
 

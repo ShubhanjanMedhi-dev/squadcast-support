@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from Nagios into Squadcast"
 sidebar: mydoc_sidebar
-permalink: nagios.html
+permalink: docs/nagios.html
 folder: mydoc
 ---
 

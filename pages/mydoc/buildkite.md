@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Get alerts from Buildkite into Squadcast"
 sidebar: mydoc_sidebar
-permalink: buildkite.html
+permalink: docs/buildkite.html
 folder: mydoc
 ---
 

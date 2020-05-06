@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Squadcast - Logstash Integration guide"
 sidebar: mydoc_sidebar
-permalink: logstash-integration-guide.html
+permalink: docs/logstash-integration-guide.html
 folder: mydoc
 ---
 

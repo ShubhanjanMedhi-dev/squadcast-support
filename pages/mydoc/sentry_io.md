@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from Sentry"
 sidebar: mydoc_sidebar
-permalink: sentryio.html
+permalink: docs/sentryio.html
 folder: mydoc
 ---
 

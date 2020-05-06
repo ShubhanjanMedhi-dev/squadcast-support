@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Maintenance Work"
 sidebar: mydoc_sidebar
-permalink: maintenance-mode.html
+permalink: docs/maintenance-mode.html
 folder: mydoc
 ---
 

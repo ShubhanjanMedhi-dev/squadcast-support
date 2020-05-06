@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get Alerts from Scout APM into Squadcast"
 sidebar: mydoc_sidebar
-permalink: scout-apm.html
+permalink: docs/scout-apm.html
 folder: mydoc
 ---
 

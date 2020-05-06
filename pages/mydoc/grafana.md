@@ -5,7 +5,7 @@ last_updated:
 keywords:
 summary: "Send alerts to Squadcast from Grafana"
 sidebar: mydoc_sidebar
-permalink: grafana.html
+permalink: docs/grafana.html
 folder: mydoc
 ---
 

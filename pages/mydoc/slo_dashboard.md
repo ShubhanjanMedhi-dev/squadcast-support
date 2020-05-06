@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Service Level Objective Dashboard"
 sidebar: mydoc_sidebar
-permalink: slo-dashboard.html
+permalink: docs/slo-dashboard.html
 folder: mydoc
 ---
 

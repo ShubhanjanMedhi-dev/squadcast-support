@@ -5,7 +5,7 @@ last_updated:
 tags: [service levels]
 summary: "Track SLIs and match them against the SLOs to improve SRE"
 sidebar: mydoc_sidebar
-permalink: service-levels.html
+permalink: docs/service-levels.html
 folder: mydoc
 ---
 

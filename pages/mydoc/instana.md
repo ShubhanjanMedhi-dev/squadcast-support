@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from Instana into Squadcast"
 sidebar: mydoc_sidebar
-permalink: instana.html
+permalink: docs/instana.html
 folder: mydoc
 ---
 

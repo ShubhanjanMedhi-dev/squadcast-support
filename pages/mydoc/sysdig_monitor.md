@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts from Sysdig Monitor into Squadcast"
 sidebar: mydoc_sidebar
-permalink: sysdig-monitor.html
+permalink: docs/sysdig-monitor.html
 folder: mydoc
 ---
 

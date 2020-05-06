@@ -3,11 +3,13 @@ title: Create and Manage On-call Schedules & Rotations
 tags: [schedules, rotations]
 summary: "Rotations for your customer support engineers or on-call teams"
 sidebar: mydoc_sidebar
-permalink: schedules.html
+permalink: docs/schedules.html
 folder: mydoc
 ---
 
 Schedules allow you to create time-based rotations/repetitions for on-call schedules. You can see who is on-call on which day with monthly, weekly, daily and agenda views.
+
+![](images/schedules_1.png)
 
 In this documentation, we'll be going through the following :-
 - Creating a Schedule
@@ -25,9 +27,7 @@ In this documentation, we'll be going through the following :-
 <br/><br/><p>Note that you will need to add a created schedule to a service for them to be notified when an incident.</p>
 {{site.data.alerts.end}}
 
-![](images/schedules_1.png)
-
-## Creating a Schedule
+## Creating an On-call Shift / Schedule
 
 You can create a schedule under **Schedules** → **+** button at the right hand side of the screen.
 
@@ -39,7 +39,11 @@ You can create a schedule under **Schedules** → **+** button at the right hand
 
 **Schedule Color**: You can also set a color for a specific schedule, which will be used while rendering the on-call on the calendar.
 
-## Creating on-call person/squad for a schedule
+{{site.data.alerts.blue-note}}
+<b>Notifications to On-call Team</b>
+<br/><br/><p>All members in an on-call shift will be notified via email 1 hour before the start of their shift.<br/><br/>
+If the created override shift has less than an hour to begin, email notification will go out immediately after creation.</p>
+{{site.data.alerts.end}}
 
 You can click on any day of the calendar to create an on-call starting from that day. You can also drag from a day to another to automatically set the *Start date* and *End date*
 
@@ -69,6 +73,16 @@ If you want the on-call to rotate between some users or squads, you can do it by
 And it will create and show the on-call users on the calendar as per the configuration you have made.
 
 ![](images/schedules_7.png)
+
+## Gaps in your Schedule 
+
+It is important to ensure that there are no gaps in your Schedules. 
+
+- If you have any gaps in your schedules configuration, the system will prompt the banner **You have gaps in your schedule** right above the Schedules calendar view.
+
+- To know more details about the gaps, you can click on the **You have gaps in your schedule** banner and it will show you the Name of the Schedule along with the Data and Time during which there is a gap. 
+
+![](images/schedules_14.png)
 
 ## Updating an existing on-call
 

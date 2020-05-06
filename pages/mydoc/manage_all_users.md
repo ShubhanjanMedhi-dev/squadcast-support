@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Adding your team & defining their roles"
 sidebar: mydoc_sidebar
-permalink: managing-all-users.html
+permalink: docs/managing-all-users.html
 folder: mydoc
 ---
 

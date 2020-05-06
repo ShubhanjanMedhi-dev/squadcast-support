@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Enable Squadcast to track user activity (commits) on Github"
 sidebar: mydoc_sidebar
-permalink: github.html
+permalink: docs/github.html
 folder: mydoc
 ---
 

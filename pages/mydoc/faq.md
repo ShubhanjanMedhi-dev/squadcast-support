@@ -6,7 +6,7 @@ tags: [faq]
 summary: "Frequently Asked Questions"
 sidebar: mydoc_sidebar
 part: Getting_Started
-permalink: squadcast-faq.html
+permalink: docs/squadcast-faq.html
 folder: mydoc
 ---
 

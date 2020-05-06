@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from Sensu"
 sidebar: mydoc_sidebar
-permalink: sensu.html
+permalink: docs/sensu.html
 folder: mydoc
 ---
 

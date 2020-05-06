@@ -6,7 +6,7 @@ last_updated:
 summary: "This guide will walk you through the terminologies and their meanings used in Squadcast."
 sidebar: mydoc_sidebar
 part: Getting_Started
-permalink: glossary.html
+permalink: docs/glossary.html
 folder: mydoc
 ---
 

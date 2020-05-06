@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Take CircleCI actions directly from incidents"
 sidebar: mydoc_sidebar
-permalink: circleci-actions.html
+permalink: docs/circleci-actions.html
 folder: mydoc
 ---
 

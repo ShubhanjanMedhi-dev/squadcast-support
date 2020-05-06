@@ -30,7 +30,7 @@ allowed-tags:
   - manage profile
   - schedules
   - rotations
-  - alert forwarding
+  - on call
   - escalation policies
   - incident dashboard
   - dashboard metrics
@@ -120,3 +120,4 @@ allowed-tags:
   - rate limiting
   - organizations
   - upgrade
+  - overrides

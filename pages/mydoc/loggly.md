@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from Loggly"
 sidebar: mydoc_sidebar
-permalink: loggly.html
+permalink: docs/loggly.html
 folder: mydoc
 ---
 

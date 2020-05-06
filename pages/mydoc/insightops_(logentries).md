@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from insightOps (LogEntries)"
 sidebar: mydoc_sidebar
-permalink: insightops-logentries.html
+permalink: docs/insightops-logentries.html
 folder: mydoc
 ---
 

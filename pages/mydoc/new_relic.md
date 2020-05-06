@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from New Relic"
 sidebar: mydoc_sidebar
-permalink: new-relic.html
+permalink: docs/new-relic.html
 folder: mydoc
 ---
 
