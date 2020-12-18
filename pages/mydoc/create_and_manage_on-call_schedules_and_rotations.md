@@ -29,7 +29,7 @@ In this documentation, we'll be going through the following :-
 
 ## Creating an On-call Shift / Schedule
 
-You can create a schedule under **Schedules** → **+** button at the right hand side of the screen.
+1.You can create a schedule under **Schedules** → **+** button at the right hand side of the screen.
 
 ![](images/schedules_2.png)
 
@@ -39,40 +39,85 @@ You can create a schedule under **Schedules** → **+** button at the right hand
 
 **Schedule Color**: You can also set a color for a specific schedule, which will be used while rendering the on-call on the calendar.
 
-{{site.data.alerts.blue-note}}
-<b>Notifications to On-call Team</b>
-<br/><br/><p>All members in an on-call shift will be notified via email 1 hour before the start of their shift.<br/><br/>
-If the created override shift has less than an hour to begin, email notification will go out immediately after creation.</p>
-{{site.data.alerts.end}}
+2.You can click on any day of the calendar to create an on-call starting from that day. You can also drag from a day to another to automatically set the *Start date* and *End date*
 
-You can click on any day of the calendar to create an on-call starting from that day. You can also drag from a day to another to automatically set the *Start date* and *End date*
+![](images/schedules_15.png)
 
-![](images/schedules_3.png)
+- Every on-call shift must be a part of some pre-defined schedule. You need to choose which *schedule* you want to create this on-call shift for. 
 
-*Start date*, *Start time*, *End date* and *End time* determine when the event begins and when it ends respectively. 
-Every on-call must be a part of some pre-defined schedule. You need to choose which *schedule* you want to create an on-call for.
+- Input the *Start date*, *Start time*, *End date* and *End time* to determine when the shift begins and when it ends respectively. 
+
+- Do not check the `Is Override` box if you want to create a normal shift.
+
+- `Repeats`:
+
+    Every Day - Use this to create a daily schedule
+
+    Weekly -- Once a week: Use this to create a schedule that occurs on one day of the week 
+
+    Weekly -- Particular Days Of a Week: Use this to create a schedule that occurs on particular days of the week 
+
+    Custom: Use this to create any other custom schedule of your choice.
+
+In this example we are creating a daily schedule.
+
+![](images/schedules_16.png)
+
+Add in the users who would be on call for this shift under the `Assignee Groups` section.
+Each group behaves as a different rotation. 
+
+In this example we have two rotations: 
+
+1st rotation - Tony Stark
+
+2nd rotation - BoJack Horseman and Diane Nyugen
+
+- Select the number of shifts after which you want to change the assignee group. 
+
+In this example we have chosen the assignee group after every shift. Since we have picked a daily rotation each day for the specified time interval will be considered one shift. So, every day this schedule will alternate between `Tony Stark`  and `BoJack Horseman and Diane Nyugen`.
+
+![](images/schedules_17.png)
 
 {{site.data.alerts.green-note-check}}
 <b>Localized Timezones:</b>
 <br/><br/><p>The selected timezone will default to the local machine timezone. This is especially beneficial for geography-based on-call rotations. <br/><br/>The teams will be able to view any created on-call schedule in their local time.</p>
 {{site.data.alerts.end}}
 
+{{site.data.alerts.blue-note}}
+<b>Notifications to On-call Team</b>
+<br/><br/><p>All members in an on-call shift will be notified via email 1 hour before the start of their shift.<br/><br/>
+If the created override shift has less than an hour to begin, email notification will go out immediately after creation.</p>
+{{site.data.alerts.end}}
+
+### How to use Repetitions
+
 Repetitions can be daily, weekly or monthly. You can customize the number of days/weeks/months you want the on-call to repeat for. You can also restrict the schedules to specific times of the day or during specific days of the week, based on your need.
-In case of weekly on-call, you can also customize on which day of the week it will repeat.
 
-![](images/schedules_4.png)
+#### Daily
 
-You can set an end date to the repetitions or you may choose to repeat it forever till you delete it.
+Check the `Every Day` option to create a daily schedule.
 
-![](images/schedules_5.png)
+![](images/schedules_18.png)
 
-If you want the on-call to rotate between some users or squads, you can do it by clicking **Add New Rotation**.
+#### Once a Week 
 
-![](images/schedules_6.png)
+Check `Weekly -- Once a week` option  to create a schedule that occurs only on one day of the week. 
+You can select the day on which this shift will be active.
 
-And it will create and show the on-call users on the calendar as per the configuration you have made.
+![](images/schedules_19.png)
 
-![](images/schedules_7.png)
+#### Multiple Days of the Week
+
+Select the `Weekly -- Particular Days Of a Week` option to create a schedule that occurs on particular days of the week 
+You can select the days on which this shift will be active.
+
+![](images/schedules_20.png)
+
+#### Custom 
+
+Select the `Custom` option to create any other custom shift of your choice.
+
+![](images/schedules_21.png)
 
 ## Gaps in your Schedule 
 
@@ -84,7 +129,7 @@ It is important to ensure that there are no gaps in your Schedules.
 
 ![](images/schedules_14.png)
 
-## Updating an existing on-call
+## Updating an Existing on-call
 
 You can update an already existing on-call by clicking over any assigned user/squad on the calendar.
 
@@ -95,7 +140,7 @@ You can update the on-call configuration as per your need and you can select **U
 -  **This and proceeding events**: to update the selected event and all the events that comes afterwards.
 - **All events in this series**: to update all the events of that series irrespective of which event you clicked on.
 
-![](images/schedules_9.png)
+![](images/schedules_22.png)
 
 ## Deleting an on-call
 
@@ -105,7 +150,7 @@ You have to choose between:
 - **This and proceeding events**: It will delete the event selected as well as all the future events belonging to that series.
 - **All events**: It will delete all the events belonging to that series.
 
-![](images/schedules_10.png)
+![](images/schedules_23.png)
 
 ## Updating/Deleting a Schedule
 
@@ -113,24 +158,14 @@ You can update/delete a schedule by clicking the the Schedule name you want to d
 
 ![](images/schedules_11.png)
 
-### Creating a Recurring Schedule
-
-**Recurring Schedules**
-
-Typically, organizations ensure that their on-calls schedules are repetitive so teams can get used to them and the on-call shifts can be more predictable to avoid any surprises. 
-
-These types of schedules have a list of users who will be rotated one after the other in a repetitive cycle. 
-
-To setup a recurring schedule on Squadcast, you can just untick the `Does not repeat` box in the pop-up and complete the rest of the schedule configuration as per your need.
-
-![](images/schedules_12.png)
-
-**Creating a One-off Schedule / Irregular Schedule**
+## Creating a One-off Schedule / Irregular Schedule
 
 One-off or non-recurring schedules are used to cover on-call for a short period of time but are not a part of the usual recurring rotations. 
 
 In some one-off cases where one member of your team is asked to step in for another, cases where there's an unavoidable emergency or even in the case of planned vacations, you can create one-off  schedules. 
 
-To setup a one-off schedule on Squadcast, you can just untick the `Does not repeat` box in the pop-up and complete the rest of the schedule configuration as per your need.
+To setup a one-off schedule on Squadcast, you can just untick the `Repeats` box in the pop-up and complete the rest of the schedule configuration as per your need.
 
-![](images/schedules_13.png)
+Click on `Create` to save this.
+
+![](images/schedules_24.png)

@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: Squadcast Support
-  version: v1.0
+  product: 
+  version: 
   folders:
 
   - title:
@@ -69,7 +69,7 @@ entries:
 
     folderitems:
     - title: Adding a Service
-      url: /docs/adding-a-service.html
+      url: /docs/adding-a-service-1.html
       output: web, pdf
 
     - title: Maintenance Mode
@@ -244,6 +244,10 @@ entries:
       url: /docs/azure-monitor.html
       output: web, pdf
 
+    - title: Bugsnag
+      url: /docs/bugsnag.html
+      output: web, pdf
+
     - title: Buildkite
       url: /docs/buildkite.html
       output: web, pdf
@@ -334,6 +338,10 @@ entries:
 
     - title: Logstash
       url: /docs/logstash-integration-guide.html
+      output: web, pdf
+
+    - title: Logz.io
+      url: /docs/logz.io.html
       output: web, pdf
 
     - title: ManageEngine Opmanager

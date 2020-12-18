@@ -45,6 +45,11 @@
 
 <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
 
+<!-- Fonts (Nunitosans & Opensans) -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -97,6 +102,11 @@
 
 </head>
 <body>
+<style>
+    li, .post-header, .summary, p, .post-content, #search-input {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+</style>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container topnavlinks">
@@ -108,7 +118,7 @@
                 <span class="icon-bar"></span>
             </button>
             
-            <a class="fa fa-home fa-lg navbar-brand" href="../index.html">&nbsp;<span class="projectTitle"> The Squadcast Support Hub</span></a>
+            <a class="navbar-brand" href="../index.html">&nbsp;<span class="projectTitle"> <img src="../images/squadcast_logo_white.png" style="width: 80%; margin-top: -2%;"> </span></a>
             
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -187,7 +197,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Squadcast Support v1.0</li>
+  <li class="sidebarTitle"> </li>
   
   
   
@@ -282,7 +292,7 @@
           
           
           
-          <li><a title="Adding a Service" href="/docs/adding-a-service.html">Adding a Service</a></li>
+          <li><a title="Adding a Service" href="/docs/adding-a-service-1.html">Adding a Service</a></li>
           
           
           
@@ -583,6 +593,13 @@
           
           
           
+          <li><a title="Bugsnag" href="/docs/bugsnag.html">Bugsnag</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Buildkite" href="/docs/buildkite.html">Buildkite</a></li>
           
           
@@ -738,6 +755,13 @@
           
           
           <li><a title="Logstash" href="/docs/logstash-integration-guide.html">Logstash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Logz.io" href="/docs/logz.io.html">Logz.io</a></li>
           
           
           
@@ -1172,10 +1196,35 @@ a[href^="http://"]:after, a[href^="https://"]:after {
     content: none;
 }
 
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li > a:hover {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li.active > a {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+body{
+    padding-top: 70px;
+}
+.summary{
+    border-left: 5px solid #6E7781;
+}
+li.sidebarTitle{
+    color: #363E47;
+}
+
 @media screen and (max-width: 1920px){
     #tg-sb-sidebar{
         position: sticky;
-        top: 0;
+        top: 9%; /*previously, 0*/
         margin-bottom: 30px;
     }
     #toc{
@@ -1236,7 +1285,7 @@ a[href^="http://"]:after, a[href^="https://"]:after {
 
 <h2 id="creating-an-on-call-shift--schedule">Creating an On-call Shift / Schedule</h2>
 
-<p>You can create a schedule under <strong>Schedules</strong> → <strong>+</strong> button at the right hand side of the screen.</p>
+<p>1.You can create a schedule under <strong>Schedules</strong> → <strong>+</strong> button at the right hand side of the screen.</p>
 
 <p><img src="images/schedules_2.png" alt="" /></p>
 
@@ -1246,40 +1295,94 @@ a[href^="http://"]:after, a[href^="https://"]:after {
 
 <p><strong>Schedule Color</strong>: You can also set a color for a specific schedule, which will be used while rendering the on-call on the calendar.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Notifications to On-call Team</b>
-<br /><br /><p>All members in an on-call shift will be notified via email 1 hour before the start of their shift.<br /><br />
-If the created override shift has less than an hour to begin, email notification will go out immediately after creation.</p>
-</div>
+<p>2.You can click on any day of the calendar to create an on-call starting from that day. You can also drag from a day to another to automatically set the <em>Start date</em> and <em>End date</em></p>
 
-<p>You can click on any day of the calendar to create an on-call starting from that day. You can also drag from a day to another to automatically set the <em>Start date</em> and <em>End date</em></p>
+<p><img src="images/schedules_15.png" alt="" /></p>
 
-<p><img src="images/schedules_3.png" alt="" /></p>
+<ul>
+  <li>
+    <p>Every on-call shift must be a part of some pre-defined schedule. You need to choose which <em>schedule</em> you want to create this on-call shift for.</p>
+  </li>
+  <li>
+    <p>Input the <em>Start date</em>, <em>Start time</em>, <em>End date</em> and <em>End time</em> to determine when the shift begins and when it ends respectively.</p>
+  </li>
+  <li>
+    <p>Do not check the <code class="highlighter-rouge">Is Override</code> box if you want to create a normal shift.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">Repeats</code>:</p>
 
-<p><em>Start date</em>, <em>Start time</em>, <em>End date</em> and <em>End time</em> determine when the event begins and when it ends respectively. 
-Every on-call must be a part of some pre-defined schedule. You need to choose which <em>schedule</em> you want to create an on-call for.</p>
+    <p>Every Day - Use this to create a daily schedule</p>
+
+    <p>Weekly – Once a week: Use this to create a schedule that occurs on one day of the week</p>
+
+    <p>Weekly – Particular Days Of a Week: Use this to create a schedule that occurs on particular days of the week</p>
+
+    <p>Custom: Use this to create any other custom schedule of your choice.</p>
+  </li>
+</ul>
+
+<p>In this example we are creating a daily schedule.</p>
+
+<p><img src="images/schedules_16.png" alt="" /></p>
+
+<p>Add in the users who would be on call for this shift under the <code class="highlighter-rouge">Assignee Groups</code> section.
+Each group behaves as a different rotation.</p>
+
+<p>In this example we have two rotations:</p>
+
+<p>1st rotation - Tony Stark</p>
+
+<p>2nd rotation - BoJack Horseman and Diane Nyugen</p>
+
+<ul>
+  <li>Select the number of shifts after which you want to change the assignee group.</li>
+</ul>
+
+<p>In this example we have chosen the assignee group after every shift. Since we have picked a daily rotation each day for the specified time interval will be considered one shift. So, every day this schedule will alternate between <code class="highlighter-rouge">Tony Stark</code>  and <code class="highlighter-rouge">BoJack Horseman and Diane Nyugen</code>.</p>
+
+<p><img src="images/schedules_17.png" alt="" /></p>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i>
 <b>Localized Timezones:</b>
 <br /><br /><p>The selected timezone will default to the local machine timezone. This is especially beneficial for geography-based on-call rotations. <br /><br />The teams will be able to view any created on-call schedule in their local time.</p>
 </div>
 
-<p>Repetitions can be daily, weekly or monthly. You can customize the number of days/weeks/months you want the on-call to repeat for. You can also restrict the schedules to specific times of the day or during specific days of the week, based on your need.
-In case of weekly on-call, you can also customize on which day of the week it will repeat.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Notifications to On-call Team</b>
+<br /><br /><p>All members in an on-call shift will be notified via email 1 hour before the start of their shift.<br /><br />
+If the created override shift has less than an hour to begin, email notification will go out immediately after creation.</p>
+</div>
 
-<p><img src="images/schedules_4.png" alt="" /></p>
+<h3 id="how-to-use-repetitions">How to use Repetitions</h3>
 
-<p>You can set an end date to the repetitions or you may choose to repeat it forever till you delete it.</p>
+<p>Repetitions can be daily, weekly or monthly. You can customize the number of days/weeks/months you want the on-call to repeat for. You can also restrict the schedules to specific times of the day or during specific days of the week, based on your need.</p>
 
-<p><img src="images/schedules_5.png" alt="" /></p>
+<h4 id="daily">Daily</h4>
 
-<p>If you want the on-call to rotate between some users or squads, you can do it by clicking <strong>Add New Rotation</strong>.</p>
+<p>Check the <code class="highlighter-rouge">Every Day</code> option to create a daily schedule.</p>
 
-<p><img src="images/schedules_6.png" alt="" /></p>
+<p><img src="images/schedules_18.png" alt="" /></p>
 
-<p>And it will create and show the on-call users on the calendar as per the configuration you have made.</p>
+<h4 id="once-a-week">Once a Week</h4>
 
-<p><img src="images/schedules_7.png" alt="" /></p>
+<p>Check <code class="highlighter-rouge">Weekly -- Once a week</code> option  to create a schedule that occurs only on one day of the week. 
+You can select the day on which this shift will be active.</p>
+
+<p><img src="images/schedules_19.png" alt="" /></p>
+
+<h4 id="multiple-days-of-the-week">Multiple Days of the Week</h4>
+
+<p>Select the <code class="highlighter-rouge">Weekly -- Particular Days Of a Week</code> option to create a schedule that occurs on particular days of the week 
+You can select the days on which this shift will be active.</p>
+
+<p><img src="images/schedules_20.png" alt="" /></p>
+
+<h4 id="custom">Custom</h4>
+
+<p>Select the <code class="highlighter-rouge">Custom</code> option to create any other custom shift of your choice.</p>
+
+<p><img src="images/schedules_21.png" alt="" /></p>
 
 <h2 id="gaps-in-your-schedule">Gaps in your Schedule</h2>
 
@@ -1296,7 +1399,7 @@ In case of weekly on-call, you can also customize on which day of the week it wi
 
 <p><img src="images/schedules_14.png" alt="" /></p>
 
-<h2 id="updating-an-existing-on-call">Updating an existing on-call</h2>
+<h2 id="updating-an-existing-on-call">Updating an Existing on-call</h2>
 
 <p>You can update an already existing on-call by clicking over any assigned user/squad on the calendar.</p>
 
@@ -1309,7 +1412,7 @@ In case of weekly on-call, you can also customize on which day of the week it wi
   <li><strong>All events in this series</strong>: to update all the events of that series irrespective of which event you clicked on.</li>
 </ul>
 
-<p><img src="images/schedules_9.png" alt="" /></p>
+<p><img src="images/schedules_22.png" alt="" /></p>
 
 <h2 id="deleting-an-on-call">Deleting an on-call</h2>
 
@@ -1321,7 +1424,7 @@ You have to choose between:</p>
   <li><strong>All events</strong>: It will delete all the events belonging to that series.</li>
 </ul>
 
-<p><img src="images/schedules_10.png" alt="" /></p>
+<p><img src="images/schedules_23.png" alt="" /></p>
 
 <h2 id="updatingdeleting-a-schedule">Updating/Deleting a Schedule</h2>
 
@@ -1329,40 +1432,32 @@ You have to choose between:</p>
 
 <p><img src="images/schedules_11.png" alt="" /></p>
 
-<h3 id="creating-a-recurring-schedule">Creating a Recurring Schedule</h3>
-
-<p><strong>Recurring Schedules</strong></p>
-
-<p>Typically, organizations ensure that their on-calls schedules are repetitive so teams can get used to them and the on-call shifts can be more predictable to avoid any surprises.</p>
-
-<p>These types of schedules have a list of users who will be rotated one after the other in a repetitive cycle.</p>
-
-<p>To setup a recurring schedule on Squadcast, you can just untick the <code class="highlighter-rouge">Does not repeat</code> box in the pop-up and complete the rest of the schedule configuration as per your need.</p>
-
-<p><img src="images/schedules_12.png" alt="" /></p>
-
-<p><strong>Creating a One-off Schedule / Irregular Schedule</strong></p>
+<h2 id="creating-a-one-off-schedule--irregular-schedule">Creating a One-off Schedule / Irregular Schedule</h2>
 
 <p>One-off or non-recurring schedules are used to cover on-call for a short period of time but are not a part of the usual recurring rotations.</p>
 
 <p>In some one-off cases where one member of your team is asked to step in for another, cases where there’s an unavoidable emergency or even in the case of planned vacations, you can create one-off  schedules.</p>
 
-<p>To setup a one-off schedule on Squadcast, you can just untick the <code class="highlighter-rouge">Does not repeat</code> box in the pop-up and complete the rest of the schedule configuration as per your need.</p>
+<p>To setup a one-off schedule on Squadcast, you can just untick the <code class="highlighter-rouge">Repeats</code> box in the pop-up and complete the rest of the schedule configuration as per your need.</p>
 
-<p><img src="images/schedules_13.png" alt="" /></p>
+<p>Click on <code class="highlighter-rouge">Create</code> to save this.</p>
+
+<p><img src="images/schedules_24.png" alt="" /></p>
 
 
                 <div class="tags">
                     
-                    <b>Tags: </b>
+                    <h2>Related Documents </h2>
                     
                     
                     
-                    <a href="tag_schedules.html" class="btn btn-default navbar-btn cursorNorm" role="button">schedules</a>
+                    
+                    <a href="schedules.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">schedules<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     
-                    <a href="tag_rotations.html" class="btn btn-default navbar-btn cursorNorm" role="button">rotations</a>
+                    
+                    <a href="rotations.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">rotations<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     
@@ -1402,9 +1497,17 @@ $('#toc').on('click', 'a', function() {
     if (window.innerWidth>1024){
         window.addEventListener('scroll', function(){
             if (window.scrollY>=73){
-                document.getElementById('toc').setAttribute('style', 'position: fixed; top: 0; margin-top: 30px;');
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'position: fixed; top: 9%; margin-top: 20px;'); /*previously, top: 0*/
+                }
             }else{
-                document.getElementById('toc').setAttribute('style', 'margin-top: 30px; position: fixed;');
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'margin-top: 20px; position: fixed;');
+                }
             }
         }); 
     }
@@ -1415,9 +1518,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
+                    <p><img src="images/company_logo.png" alt="Company logo"/></p>
                &copy;2020 Squadcast. All rights reserved. <br />
- Site last generated: May 6, 2020 <br />
-<p><img src="images/company_logo.png" alt="Company logo"/></p>
+<!--  Site last generated: Dec 18, 2020 <br /> -->
                 </div>
             </div>
             <script>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Send events to Squadcast from Datadog">
-<meta name="keywords" content="integrationdatadog,  ">
+<meta name="keywords" content="CrashlyticsElastic,  ">
 <title>Datadog | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -45,6 +45,11 @@
 
 <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
 
+<!-- Fonts (Nunitosans & Opensans) -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -97,6 +102,11 @@
 
 </head>
 <body>
+<style>
+    li, .post-header, .summary, p, .post-content, #search-input {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+</style>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container topnavlinks">
@@ -108,7 +118,7 @@
                 <span class="icon-bar"></span>
             </button>
             
-            <a class="fa fa-home fa-lg navbar-brand" href="../index.html">&nbsp;<span class="projectTitle"> The Squadcast Support Hub</span></a>
+            <a class="navbar-brand" href="../index.html">&nbsp;<span class="projectTitle"> <img src="../images/squadcast_logo_white.png" style="width: 80%; margin-top: -2%;"> </span></a>
             
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -187,7 +197,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Squadcast Support v1.0</li>
+  <li class="sidebarTitle"> </li>
   
   
   
@@ -282,7 +292,7 @@
           
           
           
-          <li><a title="Adding a Service" href="/docs/adding-a-service.html">Adding a Service</a></li>
+          <li><a title="Adding a Service" href="/docs/adding-a-service-1.html">Adding a Service</a></li>
           
           
           
@@ -583,6 +593,13 @@
           
           
           
+          <li><a title="Bugsnag" href="/docs/bugsnag.html">Bugsnag</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Buildkite" href="/docs/buildkite.html">Buildkite</a></li>
           
           
@@ -738,6 +755,13 @@
           
           
           <li><a title="Logstash" href="/docs/logstash-integration-guide.html">Logstash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Logz.io" href="/docs/logz.io.html">Logz.io</a></li>
           
           
           
@@ -1172,10 +1196,35 @@ a[href^="http://"]:after, a[href^="https://"]:after {
     content: none;
 }
 
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li > a:hover {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li.active > a {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+body{
+    padding-top: 70px;
+}
+.summary{
+    border-left: 5px solid #6E7781;
+}
+li.sidebarTitle{
+    color: #363E47;
+}
+
 @media screen and (max-width: 1920px){
     #tg-sb-sidebar{
         position: sticky;
-        top: 0;
+        top: 9%; /*previously, 0*/
         margin-bottom: 30px;
     }
     #toc{
@@ -1212,71 +1261,94 @@ a[href^="http://"]:after, a[href^="https://"]:after {
 
                 
 
-            <p>See how you can configure a service on Squadcast to get alerts from Datadog.</p>
+            <p>This document will help you integrate Datadog with Squadcast.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-<br /><br /><p>1. Only the users with Account Owner or Admin privileges can configure Services on Squadcast.<br />
-2. At least one <a href="escalation-policies.html">Escalation Policy</a> must be configured before you can add a service.</p>
-</div>
+<p>Datadog is a monitoring platform for cloud applications that brings in together data from servers, containers, databases, third-party services, thus providing observability into the entire stack. Route detailed monitoring alerts from Datadog to the right users in Squadcast.</p>
 
-<h2 id="using-datadog-as-an-alert-source">Using Datadog as an Alert Source</h2>
+<h2 id="how-to-integrate-datadog-with-squadcast">How to integrate Datadog with Squadcast</h2>
+
+<h3 id="in-squadcast-using-datadog-as-an-alert-source">In Squadcast: Using Datadog as an Alert Source</h3>
 
 <p>On the <strong>Sidebar</strong>, click on <strong>Services</strong>.</p>
 
-<p>You can either choose to use existing service or <a href="adding-a-service.html">create a new service</a></p>
+<p><img src="images/integration_1-1.png" alt="" /></p>
 
-<p>Now, click on the corresponding <strong>Alert Sources</strong> button.</p>
+<p>Select an existing Service or <strong>Add service</strong></p>
+
+<p><img src="images/integration_1-2.png" alt="" /></p>
+
+<p>Click the corresponding <strong>Alert Sources</strong></p>
 
 <p><img src="images/integration_1.png" alt="" /></p>
 
-<p>Select <strong>Datadog</strong> from  <strong>Alert Source</strong> drop down and copy the Webhook URL shown.</p>
+<p>Search for <strong>Datadog</strong> from  the <strong>Alert Source</strong> drop down menu and copy the webhook</p>
 
 <p><img src="images/datadog_1.png" alt="" /></p>
 
-<h2 id="now-follow-these-steps-on-datadog">Now follow these steps on Datadog:</h2>
-<p>1.Open <strong>Integrations</strong> page from the sidebar</p>
+<h3 id="in-datadog-create-a-squadcast-webhook">In Datadog: Create a Squadcast Webhook</h3>
 
-<p>2.Use the search bar to search for <strong>Webhooks</strong></p>
-
-<p>3.Once the Webhooks tile appears, hover and click on “Install”</p>
-
-<p>4.Navigate to the <strong>Configuration</strong> tab and scroll to the bottom of the page</p>
-
-<p>5.Under the section <strong>Name and URL</strong>, enter a meaningful name and paste the <strong>Datadog Webhook URL</strong> provided by Squadcast</p>
+<p>Open <strong>Integrations</strong> page from the sidebar</p>
 
 <p><img src="images/datadog_2.png" alt="" /></p>
 
-<p>6.Tick the checkbox under the section <strong>Use custom payload</strong></p>
+<p>Search for <strong>Webhooks</strong>. Once the Webhooks tile appears, hover over it and click on “Configure”.</p>
 
-<p>7.Copy-paste the following JSON in the text box under the <strong>Custom Payload section</strong></p>
+<p><img src="images/datadog_3.png" alt="" /></p>
+
+<p>Navigate to the <strong>Configuration</strong> tab.</p>
+
+<p><img src="images/datadog_4.png" alt="" /></p>
+
+<p>Scroll to the bottom of the page. Click on <code class="highlighter-rouge">New Webhook</code> to add a new Webhook URL.</p>
+
+<p><img src="images/datadog_5.png" alt="" /></p>
+
+<p>(a) Give the Webhook a name in the Name field.</p>
+
+<p>(b) Paste the <strong>Datadog Webhook URL</strong> provided by Squadcast in the URL field.</p>
+
+<p>(c) Copy-paste the following JSON in the text box under the <strong>Payload</strong> section.</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-
-</span><span class="nl">"alertId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$ALERT_ID"</span><span class="p">,</span><span class="w">
-</span><span class="nl">"eventMessage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$TEXT_ONLY_MSG"</span><span class="p">,</span><span class="w">
-</span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$EVENT_TITLE"</span><span class="p">,</span><span class="w">
-</span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$LINK"</span><span class="p">,</span><span class="w">
-</span><span class="nl">"alertTransition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$ALERT_TRANSITION"</span><span class="w">
-
+    </span><span class="nl">"alertId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$ALERT_ID"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"eventMessage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$TEXT_ONLY_MSG"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$EVENT_TITLE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$LINK"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"alertTransition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$ALERT_TRANSITION"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hostname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$HOSTNAME"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"orgName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$ORG_NAME"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"priority"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$PRIORITY"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"snapshot"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$SNAPSHOT"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"alertQuery"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$ALERT_QUERY"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"alertScope"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$ALERT_SCOPE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"alertStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$ALERT_STATUS"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"eventType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$EVENT_TYPE"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"lastUpdated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$LAST_UPDATED"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<p>8.Click on “Install Integration” to complete the service integration</p>
+<p><img src="images/datadog_6.png" alt="" /></p>
 
-<p>That’s it :) You are now good to go with your Datadog integration!</p>
+<p>Click on “Save” to complete the service integration.</p>
+
+<p>That’s it, you are good to go! Your Datadog integration is complete.</p>
+
+<p>Now, whenever Datadog fires an alert, an incident will be created in Squadcast for it. When the alert recovers in Datadog, the corresponding incident will <strong>automatically get resolved</strong> in Squadcast as well.</p>
 
 
                 <div class="tags">
                     
-                    <b>Tags: </b>
+                    <h2>Related Documents </h2>
                     
                     
                     
-                    <a href="tag_integration.html" class="btn btn-default navbar-btn cursorNorm" role="button">integration</a>
+                    
+                    <a href="Crashlytics.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">Crashlytics<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     
-                    <a href="tag_datadog.html" class="btn btn-default navbar-btn cursorNorm" role="button">datadog</a>
+                    
+                    <a href="Elastic.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">Elastic<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     
@@ -1316,9 +1388,17 @@ $('#toc').on('click', 'a', function() {
     if (window.innerWidth>1024){
         window.addEventListener('scroll', function(){
             if (window.scrollY>=73){
-                document.getElementById('toc').setAttribute('style', 'position: fixed; top: 0; margin-top: 30px;');
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'position: fixed; top: 9%; margin-top: 20px;'); /*previously, top: 0*/
+                }
             }else{
-                document.getElementById('toc').setAttribute('style', 'margin-top: 30px; position: fixed;');
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'margin-top: 20px; position: fixed;');
+                }
             }
         }); 
     }
@@ -1329,9 +1409,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
+                    <p><img src="images/company_logo.png" alt="Company logo"/></p>
                &copy;2020 Squadcast. All rights reserved. <br />
- Site last generated: May 6, 2020 <br />
-<p><img src="images/company_logo.png" alt="Company logo"/></p>
+<!--  Site last generated: Dec 18, 2020 <br /> -->
                 </div>
             </div>
             <script>

@@ -1,42 +1,60 @@
 ---
 title: Splunk
-tags: [integration, splunk]
+tags: [Slack-as-an-Alert-Source, Sqreen]
 keywords: 
 last_updated: 
-summary: "Get Splunk alerts into Squadcast"
+summary: "Route alerts from Splunk into Squadcast"
 sidebar: mydoc_sidebar
 permalink: docs/splunk.html
 folder: mydoc
 ---
 
-Follow the steps below to configure a service so as to extract its related alert data from Splunk. Squadcast will then process this information to create incidents for this service as per your preferences.
+This document will help you integrate Splunk with Squadcast.
 
-## Using Splunk as an Alert Source
+Splunk is used to search, analyze and visualize the machine-generated data gathered from the websites, applications, sensors, devices etc. which make up your IT infrastructure and business. Route detailed event information from Splunk to the right users in Squadcast.
+
+## How to integrate Splunk with Squadcast 
+
+### In Squadcast: Using Splunk as an Alert Source 
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+![](images/integration_1-1.png)
 
-Now, click on the corresponding **Alert Sources** button.
+Select an existing Service or **Add service** 
+
+![](images/integration_1-2.png)
+
+Click the corresponding **Alert Sources**
 
 ![](images/integration_1.png)
 
-Select **Splunk** from  **Alert Source** drop down and copy the Webhook URL shown.
+Search for **Splunk** from the **Alert Source** drop down menu and copy the webhook URL shown.
 
 ![](images/splunk_1.png)
 
-## Create a Squadcast webhook alert in Splunk
+### In Splunk: Create a Squadcast webhook alert 
 
-In your Splunk dashboard, click on **Search & Reporting** under **Apps**.
+In the Splunk dashboard, click on **Search & Reporting** under **Apps**
 
-![](images/splunk_2.png){: style="max-width: 30%" }
+![](images/splunk_2.png)
 
-Do the required search and then click on **Save As** and select **Alert**.
+Run your desired search query in the logs (a) and then click on **Save As** and select **Alert** (b)
 
 ![](images/splunk_3.png)
 
-In the **Save As Alert** box, enter the title, description and other Trigger Conditions and under **Trigger Actions**, click on the **Add Actions** button and select **Webhook** and enter the webhook url from the previous step under **URL** and click the **Save** button.
+In the **Save As Alert** box, enter the title, description and other Trigger Conditions. You can find more information on what each of these parameters mean in the [Splunk documentation](https://docs.splunk.com/Documentation/Splunk/8.1.0/Alert/Aboutalerts).
+
+Under **Trigger Actions**, click on  **Add Actions** and select **Webhook** 
+
+Paste the copied webhook URL from Squadcast under **URL** and click on **Save**
 
 ![](images/splunk_4.png)
 
-That's it! The Splunk Integration is completed and whenever an alert is fired for your search query, an alert will get created in Squadcast as well.
+That's it! Your Splunk Integration is now complete. Whenever an alert is fired for your search query, an incident will be created in Squadcast.
+
+{{site.data.alerts.blue-note}}
+<b>FAQ:</b>
+<br/><br/><p>Q: If an alert gets resolved in Splunk, does Splunk send auto-resolve signals to Squadcast?<br/>
+A: No, Splunk does not send auto-resolve signals to Squadcast. Hence, Squadcast incidents from Splunk should be resolved manually.</p>
+{{site.data.alerts.end}}

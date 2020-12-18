@@ -121,3 +121,14 @@ allowed-tags:
   - organizations
   - upgrade
   - overrides
+  - Logz.io
+  - Bugsnag
+  - CopperEgg
+  - Crashlytics
+  - Logstash
+  - ManageEngine-Opmanager
+  - Azure-Monitor
+  - Buildkite
+  - Slack-as-an-Alert-Source
+  - Sqreen
+  - Elastic

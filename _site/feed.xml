@@ -5,35 +5,9 @@
         <description>Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features.</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 06 May 2020 17:20:00 +0530</pubDate>
-        <lastBuildDate>Wed, 06 May 2020 17:20:00 +0530</lastBuildDate>
+        <pubDate>Fri, 18 Dec 2020 17:00:20 +0530</pubDate>
+        <lastBuildDate>Fri, 18 Dec 2020 17:00:20 +0530</lastBuildDate>
         <generator>Jekyll v4.0.0</generator>
-        
-        <item>
-            <title>Welcome to Jekyll!</title>
-            <description>&lt;p&gt;Theme updates:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Permalinks&lt;/li&gt;
-  &lt;li&gt;Kramdown&lt;/li&gt;
-  &lt;li&gt;URL specified in config file&lt;/li&gt;
-  &lt;li&gt;removed PDF output&lt;/li&gt;
-  &lt;li&gt;removed some of the alternative layouts&lt;/li&gt;
-  &lt;li&gt;added blog feature&lt;/li&gt;
-  &lt;li&gt;sidebars configurable per page&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;[]:&lt;/p&gt;
-
-</description>
-            <pubDate>Wed, 24 Feb 2016 00:00:00 +0530</pubDate>
-            <link>http://localhost:4000/myupdate.html</link>
-            <guid isPermaLink="true">http://localhost:4000/myupdate.html</guid>
-            
-            <category>news</category>
-            
-            
-        </item>
         
     </channel>
 </rss>

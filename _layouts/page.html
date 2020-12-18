@@ -6,10 +6,35 @@ a[href^="http://"]:after, a[href^="https://"]:after {
     content: none;
 }
 
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li > a:hover {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li.active > a {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+body{
+    padding-top: 70px;
+}
+.summary{
+    border-left: 5px solid #6E7781;
+}
+li.sidebarTitle{
+    color: #363E47;
+}
+
 @media screen and (max-width: 1920px){
     #tg-sb-sidebar{
         position: sticky;
-        top: 0;
+        top: 9%; /*previously, 0*/
         margin-bottom: 30px;
     }
     #toc{
@@ -74,11 +99,12 @@ a[href^="http://"]:after, a[href^="https://"]:after {
 
                 <div class="tags">
                     {% if page.tags != null %}
-                    <b>Tags: </b>
+                    <h2>Related Documents </h2>
                     {% assign projectTags = site.data.tags.allowed-tags %}
                     {% for tag in page.tags %}
                     {% if projectTags contains tag %}
-                    <a href="{{ "tag_" | append: tag | append: ".html" }}" class="btn btn-default navbar-btn cursorNorm" role="button">{{page.tagName}}{{tag}}</a>
+                    {% assign taggs = tag | replace: "-"," " %}
+                    <a href="{{ "" | append: tag | append: ".html" }}" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">{{page.tagName}}{{taggs}}<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     {% endif %}
                     {% endfor %}
                     {% endif %}
@@ -96,9 +122,17 @@ a[href^="http://"]:after, a[href^="https://"]:after {
     if (window.innerWidth>1024){
         window.addEventListener('scroll', function(){
             if (window.scrollY>=73){
-                document.getElementById('toc').setAttribute('style', 'position: fixed; top: 0; margin-top: 30px;');
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'position: fixed; top: 9%; margin-top: 20px;'); /*previously, top: 0*/
+                }
             }else{
-                document.getElementById('toc').setAttribute('style', 'margin-top: 30px; position: fixed;');
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'margin-top: 20px; position: fixed;');
+                }
             }
         }); 
     }

@@ -3,6 +3,7 @@ title: "The Squadcast Support Hub"
 keywords: squadcast support hub
 tags:
 permalink: index.html
+toc: false
 ---
         <style>
         .box{
@@ -31,7 +32,7 @@ permalink: index.html
             text-align: center;
             margin-top: 15px;
             margin-bottom: 15px;
-            font-family: inherit;
+            font-family: 'Nunito Sans', sans-serif;
         }
         .content-box{
             font-size: 16px;
@@ -52,6 +53,7 @@ permalink: index.html
         }
         body{
             background-color: white;
+            padding-top: 0px;
         }
         .col-md-3{
             width: 0%;
@@ -62,6 +64,8 @@ permalink: index.html
         }
         table{
             max-width: 100%;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
         table > tbody > tr > td{
             padding: 0px;
@@ -71,7 +75,15 @@ permalink: index.html
             display: none;
         }
         .navbar{
-            display: none;
+            display: block;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #00162d;
+            border-bottom: 0px;
+        }
+        #search-input{
+          visibility: hidden;
         }
         .image{
             width: 100px !important;
@@ -90,12 +102,13 @@ permalink: index.html
         }
         #header-div{
             text-align: center;
-            background-image: linear-gradient(129deg,#252c66,#161f56);
+            background-color: #00162d;
             margin-left: -20px;
             margin-right: -20px;
             margin-top: -20px;
             padding: 50px;
             padding-bottom: 70px;
+            font-family: 'Nunito Sans', sans-serif;
         }
         #search-demo-container{
             text-align: center;
@@ -113,6 +126,7 @@ permalink: index.html
             height: 50px;
             border-radius: 10px;
             padding: 20px;
+            font-family: 'Nunito Sans', sans-serif;
         }
         .para{
             color: white;
@@ -131,12 +145,38 @@ permalink: index.html
         .col-md-8{
             width: 100%;
         }
+        .nav > li {
+            width: 20%;
+        }
+        .nav > li > a {
+            font-size: 18px;
+            line-height: 35px;
+            padding: 8px 10px;
+            text-align: center;
+        }
+        .nav-tabs > li > a {
+            margin-right: 10px;
+        }
+        a[data-toggle]{
+            color: #0f61dd;
+        }
+        .nav > li > a:hover {
+            background-color: #00162d;
+        }
+        .nav > li.active > a {
+            background-color: #00162d !important;
+        }
+        @media screen and (max-width: 1024px){
+          tr{
+            display: block !important;
+          }
+        }
       </style>
-        <div style="margin-bottom: 20px;">
+        <div style="margin-bottom: 20px; margin-top: 90px;">
             <div id="header-div">
-                <div id="logo-div">
+                <!-- <div id="logo-div">
                     <img src="images/squadcast_logo_white.png" style="margin-top: 0px;">
-                </div>
+                </div> -->
                 <h1 style="color: white; margin-bottom: 30px;">Squadcast Support Hub</h1>
                 <p class="para">Welcome to the Squadcast Support Hub. You’ll find comprehensive guides and documentation to help you start working with Squadcast as quickly as possible. Let’s jump right in! &#128640;</p>
                 <div id="search-demo-container">
@@ -159,77 +199,125 @@ permalink: index.html
             })
             </script>
         </div>
-        <div>
-        <table>
-          <tr>
-            <td><a href="docs/getting-started.html"><div class="box" style="border-right: 1px solid #e7e9ed; border-bottom: 1px solid #e7e9ed;">
-                <div class="image-box">
-                    <img src="images/get_started.svg" class="image">
+        <!-- <div style="padding-left: 16%; padding-right: 16%; margin-bottom: 20px;">
+            <ul id="profileTabs" class="nav nav-tabs">
+                <li class="active"><a href="#learn" data-toggle="tab">Learn</a></li>
+                <li><a href="#get-help" data-toggle="tab">Get Help</a></li>
+                <li><a href="#stay-informed" data-toggle="tab">Stay Informed</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="learn">
+                    <h2>Learn</h2>
+                    <ul>
+                        <li><a href="getting-started.html">Getting Started</a></li>
+                        <li><a href="docs/getting-started.html">Reference Manual</a></li>
+                        <li><a href="">Guides</a></li>
+                        <li><a href="https://apidocs.squadcast.com/" target=_blank>API Reference</a></li>
+                    </ul>
                 </div>
-                <div class="heading-box">
+
+                <div role="tabpanel" class="tab-pane" id="get-help">
+                    <h2>Get Help</h2>
+                    <ul>
+                        <li><a href="https://community.squadcast.com/" target=_blank>Community Forum</a></li>
+                            <ul>
+                                <li><a href="https://www.squadcast.com/support-ticket-form" target=_blank>Feature Request</a></li>
+                                <li><a href="https://www.squadcast.com/support-ticket-form" target=_blank>Bug Report</a></li>
+                            </ul>
+                        <li><a href="mailto:support@squadcast.com">Customer Support</a></li>
+                        <li><a href="">Contact Sales</a></li>
+                    </ul>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="stay-informed">
+                    <h2>Stay Informed</h2>
+                    <ul>
+                        <li><a href="https://status.squadcast.com/" target=_blank>Service Status</a></li>
+                        <li><a href="https://headwayapp.co/squadcast-updates" target=_blank>What's New</a></li>
+                        <li><a href="http://bit.ly/squadcast-roadmap" target=_blank>Roadmap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+        <style>
+            .main-content{
+              margin-left: -20px;
+              margin-right: -20px;
+              margin-top: -20px;
+            }
+            div.box:hover{
+              box-shadow: 0 5px 20px 0 rgba(0,0,0,.15);
+              transform: scale(1.075) rotate(.0001deg);
+              transition-duration: 170ms;
+              background-color: white;
+            }
+            table, tr, td, table > tbody > tr:nth-of-type(odd){
+              border: 0px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: transparent;
+            }
+            #header-nav-right{
+                display: none;
+            }
+            .hub-landing-search > h2 {text-align: center;}
+          .hub-landing-description > p {text-align: center;}
+          #hub-subheader-parent {display: none;}
+          </style>
+          <div class="main-content" style="display: flex; align-items: center; justify-content: center; margin-bottom: 50px;">
+            <table>
+              <tr>
+                <td><a href="docs/getting-started.html" style="text-decoration: none; color: #020c45;"><div class="box" id="box" style="border:1px solid #e7e9ed; height: 250px; width: 300px; padding: 20px;box-shadow:0 5px 20px 0 #c4e1ff; background-color:white; margin-bottom:20px; margin-right:20px; border-radius:4px">
+                  <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
+                    <img src="https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5e0b0c781520076cc66b69e0_get_started.svg" width="100" height="100">
+                  </div>
+                  <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
                     Getting Started
-                </div>
-                <div class="content-box">
-                    These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.
-                </div>
-            </div></a></td>
-            <td><a href="mydoc_pages.html"><div class="box" style="border-right: 1px solid #e7e9ed; border-bottom: 1px solid #e7e9ed;">
-                <div class="image-box">
-                    <img src="images/using_squadcast.svg" class="image">
-                </div>
-                <div class="heading-box">
+                  </div>
+                  </div></a></td>
+                <td><a href="#" style="text-decoration: none; color: #020c45;"><div class="box" style="border: 1px solid #e7e9ed; height: 250px; width: 300px; padding: 20px;box-shadow:0 5px 20px 0 #c4e1ff; background-color:white; margin-bottom:20px; margin-right:20px; border-radius:4px">
+                  <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
+                    <img src="https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5e0b0c79eae07e40c97cbd6c_using_squadcast.svg" width="100" height="100">
+                  </div>
+                  <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
                     Using Squadcast
-                </div>
-                <div class="content-box">
-                    These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.
-                </div>
-            </div></a></td>
-            <td><a href="mydoc_posts.html"><div class="box" style="border-bottom: 1px solid #e7e9ed;">
-                <div class="image-box">
-                    <img src="images/videos.svg" class="image">
-                </div>
-                <div class="heading-box">
+                  </div>
+                  </div></a></td>
+                <td><a href="#" style="text-decoration: none; color: #020c45;"><div class="box" style="border: 1px solid #e7e9ed; height: 250px; width: 300px; padding: 20px;box-shadow:0 5px 20px 0 #c4e1ff; background-color:white; margin-bottom:20px; margin-right:0px; border-radius:4px">
+                  <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
+                    <img src="https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5e0b0c8815200718276b69eb_videos.svg" width="100" height="100">
+                  </div>
+                  <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
                     How to Videos
-                </div>
-                <div class="content-box">
-                    These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.
-                </div>
-            </div></a></td>
-          </tr>
-          <tr>
-            <td><a href="mydoc_labels.html"><div class="box" style="border-right: 1px solid #e7e9ed;">
-                <div class="image-box">
-                    <img src="images/services.svg" class="image">
-                </div>
-                <div class="heading-box">
+                  </div>
+                  </div></a></td>
+              </tr>
+              <tr>
+                <td><a href="#" style="text-decoration: none; color: #020c45;"><div class="box" style="border:1px solid #e7e9ed;height:250px;width:300px;padding:20px;box-shadow:0 5px 20px 0 #c4e1ff;background-color:white;margin-right:20px;border-radius:4px">
+                  <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
+                    <img src="https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5e0b0c791520072d656b69e2_services.svg" width="100" height="100">
+                  </div>
+                  <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
                     Services
-                </div>
-                <div class="content-box">
-                    These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.
-                </div>
-            </div></a></td>
-            <td><a href="mydoc_navtabs.html"><div class="box" style="border-right: 1px solid #e7e9ed;">
-                <div class="image-box">
-                    <img src="images/integrations.svg" class="image">
-                </div>
-                <div class="heading-box">
+                  </div>
+                  </div></a></td>
+                <td><a href="#" style="text-decoration: none; color: #020c45;"><div class="box" style="border:1px solid #e7e9ed;height:250px;width:300px;padding:20px;box-shadow:0 5px 20px 0 #c4e1ff;background-color:white;margin-right:20px;border-radius:4px">
+                  <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
+                    <img src="https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5e0b0c79ad6bad7252c6f5ce_integrations.svg" width="100" height="100">
+                  </div>
+                  <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
                     Integrations & Extensions
-                </div>
-                <div class="content-box">
-                    These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.
-                </div>
-            </div></a></td>
-            <td><a href="mydoc_lists.html"><div class="box">
-                <div class="image-box">
-                    <img src="images/incidents.svg" class="image">
-                </div>
-                <div class="heading-box">
+                  </div>
+                  </div></a></td>
+                <td><a href="#" style="text-decoration: none; color: #020c45;"><div class="box" style="border:1px solid #e7e9ed;height:250px;width:300px;padding:20px;box-shadow:0 5px 20px 0 #c4e1ff;background-color:white;margin-right:0px;border-radius:4px">
+                  <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
+                    <img src="https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5e0b0c78743608466beef783_incidents.svg" width="100" height="100">
+                  </div>
+                  <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
                     Alerts & Incidents
-                </div>
-                <div class="content-box">
-                    These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.These are demo content.
-                </div>
-            </div></a></td>
-          </tr>
-        </table>
-      </div>
+                  </div>
+                  </div></a></td>
+              </tr>
+            </table>
+          </div>

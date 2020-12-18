@@ -1,62 +1,83 @@
 ---
 title: Datadog
-tags: [integration, datadog]
+tags: [Crashlytics, Elastic]
 sidebar: mydoc_sidebar
 permalink: docs/datadog.html
 summary: "Send events to Squadcast from Datadog"
 folder: mydoc
 ---
 
-See how you can configure a service on Squadcast to get alerts from Datadog.
+This document will help you integrate Datadog with Squadcast.
 
-{{site.data.alerts.note}}
-<br/><br/><p>1. Only the users with Account Owner or Admin privileges can configure Services on Squadcast.<br/>
-2. At least one <a href="escalation-policies.html">Escalation Policy</a> must be configured before you can add a service.</p>
-{{site.data.alerts.end}}
+Datadog is a monitoring platform for cloud applications that brings in together data from servers, containers, databases, third-party services, thus providing observability into the entire stack. Route detailed monitoring alerts from Datadog to the right users in Squadcast.
 
-## Using Datadog as an Alert Source
+## How to integrate Datadog with Squadcast
+
+### In Squadcast: Using Datadog as an Alert Source
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+![](images/integration_1-1.png)
 
-Now, click on the corresponding **Alert Sources** button.
+Select an existing Service or **Add service** 
+
+![](images/integration_1-2.png)
+
+Click the corresponding **Alert Sources**
 
 ![](images/integration_1.png)
 
-Select **Datadog** from  **Alert Source** drop down and copy the Webhook URL shown.
+Search for **Datadog** from  the **Alert Source** drop down menu and copy the webhook 
 
 ![](images/datadog_1.png)
 
-## Now follow these steps on Datadog:
-1.Open **Integrations** page from the sidebar
+### In Datadog: Create a Squadcast Webhook
 
-2.Use the search bar to search for **Webhooks**
-
-3.Once the Webhooks tile appears, hover and click on "Install"
-
-4.Navigate to the **Configuration** tab and scroll to the bottom of the page
-
-5.Under the section **Name and URL**, enter a meaningful name and paste the **Datadog Webhook URL** provided by Squadcast 
+Open **Integrations** page from the sidebar
 
 ![](images/datadog_2.png)
 
-6.Tick the checkbox under the section **Use custom payload**
+Search for **Webhooks**. Once the Webhooks tile appears, hover over it and click on "Configure".
 
-7.Copy-paste the following JSON in the text box under the **Custom Payload section** 
+![](images/datadog_3.png)
+
+Navigate to the **Configuration** tab. 
+
+![](images/datadog_4.png)
+
+Scroll to the bottom of the page. Click on `New Webhook` to add a new Webhook URL. 
+
+![](images/datadog_5.png)
+
+(a) Give the Webhook a name in the Name field.
+
+(b) Paste the **Datadog Webhook URL** provided by Squadcast in the URL field.
+
+(c) Copy-paste the following JSON in the text box under the **Payload** section.
 
 ```json
 {
-
-"alertId": "$ALERT_ID",
-"eventMessage": "$TEXT_ONLY_MSG",
-"title": "$EVENT_TITLE",
-"url": "$LINK",
-"alertTransition": "$ALERT_TRANSITION"
-
+    "alertId": "$ALERT_ID",
+    "eventMessage": "$TEXT_ONLY_MSG",
+    "title": "$EVENT_TITLE",
+    "url": "$LINK",
+    "alertTransition": "$ALERT_TRANSITION",
+    "hostname": "$HOSTNAME",
+    "orgName": "$ORG_NAME",
+    "priority": "$PRIORITY",
+    "snapshot": "$SNAPSHOT",
+    "alertQuery": "$ALERT_QUERY",
+    "alertScope": "$ALERT_SCOPE",
+    "alertStatus": "$ALERT_STATUS",
+    "eventType": "$EVENT_TYPE",
+    "lastUpdated": "$LAST_UPDATED"
 }
 ```
 
-8.Click on “Install Integration” to complete the service integration
+![](images/datadog_6.png)
 
-That's it :) You are now good to go with your Datadog integration!
+Click on “Save” to complete the service integration. 
+
+That's it, you are good to go! Your Datadog integration is complete. 
+
+Now, whenever Datadog fires an alert, an incident will be created in Squadcast for it. When the alert recovers in Datadog, the corresponding incident will **automatically get resolved** in Squadcast as well. 

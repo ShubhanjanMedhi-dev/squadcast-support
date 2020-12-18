@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  
-  
 
 
   
@@ -10,7 +8,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/adding-a-service.html</loc>
+    <loc>http://localhost:4000/docs/adding-a-service-1.html</loc>
   </url>
   
   
@@ -71,6 +69,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/azure-monitor.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/bugsnag.html</loc>
   </url>
   
   
@@ -217,6 +221,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/freshping.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/getting-started.html</loc>
   </url>
   
   
@@ -375,6 +385,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/logstash-integration-guide.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/logz.io.html</loc>
   </url>
   
   

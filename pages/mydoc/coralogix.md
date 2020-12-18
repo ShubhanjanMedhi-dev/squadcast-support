@@ -1,6 +1,6 @@
 ---
 title: Coralogix
-tags: [integration, coralogix]
+tags: [CopperEgg, Crashlytics]
 last_updated:
 keywords:
 summary: "Get alerts from Coralogix into Squadcast"
@@ -9,61 +9,69 @@ permalink: docs/coralogix.html
 folder: mydoc
 ---
 
-## Pre-requisites
-1.  A valid Squadcast cloud subscription 
-2. A user account in Coralogix
+This document will help you integrate Coralogix with Squadcast.
 
-Follow the steps below to configure a service so as to push related alert data from Coralogix into Squadcast.
+Coralogix’s machine learning powered platform turns cluttered log data into meaningful patterns and trends, helping users gain valuable insights. 
+Route detailed log alerts from Coralogix to the right users in Squadcast.
 
-Squadcast will then process this information to create incidents for this service as per your preferences.
+## How to integrate Coralogix with Squadcast
 
-## Using Coralogix as an Alert Source
+### In Squadcast: Using Coralogix as an Alert Source
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+![](images/integration_1-1.png)
 
-Now, click on the corresponding **Alert Sources** button.
+Select an existing Service or **Add service** 
+
+![](images/integration_1-2.png)
+
+Click the corresponding **Alert Sources**
 
 ![](images/integration_1.png)
 
-Select **Coralogix** from  **Alert Source** drop down and copy the Webhook URL shown.
+Search for **Coralogix** from the **Alert Source** drop down menu and copy the webhook URL shown.
 
 ![](images/coralogix_1.png)
 
-## Create a Squadcast Webhook in Coralogix
+### In Coralogix: Create a Squadcast Webhook
 
-1.Login to Coralogix and click on the **Settings** button as shown below.
+Login to Coralogix and click on the **Settings** present under your user icon.
 
 ![](images/coralogix_2.png)
 
-2.Click on the **Integrations** tab.
+Click on the **Webhooks** tab and click on the **+** button to add a new Webhook.
 
 ![](images/coralogix_3.png)
 
-3.Click on the **+** button to add a new integration.
+(a) Give the Webhook a name in the Alias field.
+
+(b) Choose WebHook as the option from the drop down.
+
+(c) Paste the copied Webhook URL from Squadcast in the URL field.
+
+(d) Choose Method as Post.
+
+(e) Click on Test Configuration. Go back to Squadcast and verify if the test alert from Coralogix triggered an incident. If it did, the integration is working successfully.
+
+(f) Click on Save.
 
 ![](images/coralogix_4.png)
 
-4.Select WebHook from the dropdown. Paste the Webhook URL copied from Squadcast dashboard in the **URL** field. Select the **Method** as *Post*. Click on Save.
+Now, go to the **Alerts** tab and click on **New Alert**.
 
 ![](images/coralogix_5.png)
 
-5.Now, go to the **Alerts** tab.
+Fill up the alerting specs as per your requirement. In the **Conditions** section, enable the **Notify When Resolved** toggle.
 
 ![](images/coralogix_6.png)
 
-6.Click on **New Alert**.
+In the **Recipients** section, under **Webhook Recipients**, select the Squadcast Webhook URL you just created and click on **Create Alert**.
 
 ![](images/coralogix_7.png)
 
-7.Fill up the alerting specs as per your requirement. In the **Conditions** section, enable the **Notify When Resolved**.
-
-![](images/coralogix_8.png)
-
-8.In the **Recipients** section, under **Webhook Recipients**, select the Squadcast Webhook URL you just created. Finally save the alert.
-
-![](images/coralogix_9.png)
+That’s it! Your Coralogix integration is complete, you are good to go.
 
 Now, whenever Coralogix sends an alert with `alert_action` **trigger** on the Squadcast webhook, an Incident gets created in Squadcast.
-Similarly, when Coralogix sends an alert with `alert_action` **resolve** on the Squadcast webhook, the corresponding triggered incident in Squadcast gets resolved.
+
+Similarly, when Coralogix sends an alert with `alert_action` **resolve** on the Squadcast webhook, the corresponding triggered incident in Squadcast gets **automatically resolved**.

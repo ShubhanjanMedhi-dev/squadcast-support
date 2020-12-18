@@ -4,8 +4,8 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Get Splunk alerts into Squadcast">
-<meta name="keywords" content="integrationsplunk,  ">
+<meta name="description" content="Route alerts from Splunk into Squadcast">
+<meta name="keywords" content="Slack-as-an-Alert-SourceSqreen,  ">
 <title>Splunk | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -45,6 +45,11 @@
 
 <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
 
+<!-- Fonts (Nunitosans & Opensans) -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -97,6 +102,11 @@
 
 </head>
 <body>
+<style>
+    li, .post-header, .summary, p, .post-content, #search-input {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+</style>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container topnavlinks">
@@ -108,7 +118,7 @@
                 <span class="icon-bar"></span>
             </button>
             
-            <a class="fa fa-home fa-lg navbar-brand" href="../index.html">&nbsp;<span class="projectTitle"> The Squadcast Support Hub</span></a>
+            <a class="navbar-brand" href="../index.html">&nbsp;<span class="projectTitle"> <img src="../images/squadcast_logo_white.png" style="width: 80%; margin-top: -2%;"> </span></a>
             
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -187,7 +197,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Squadcast Support v1.0</li>
+  <li class="sidebarTitle"> </li>
   
   
   
@@ -282,7 +292,7 @@
           
           
           
-          <li><a title="Adding a Service" href="/docs/adding-a-service.html">Adding a Service</a></li>
+          <li><a title="Adding a Service" href="/docs/adding-a-service-1.html">Adding a Service</a></li>
           
           
           
@@ -583,6 +593,13 @@
           
           
           
+          <li><a title="Bugsnag" href="/docs/bugsnag.html">Bugsnag</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Buildkite" href="/docs/buildkite.html">Buildkite</a></li>
           
           
@@ -738,6 +755,13 @@
           
           
           <li><a title="Logstash" href="/docs/logstash-integration-guide.html">Logstash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Logz.io" href="/docs/logz.io.html">Logz.io</a></li>
           
           
           
@@ -1172,10 +1196,35 @@ a[href^="http://"]:after, a[href^="https://"]:after {
     content: none;
 }
 
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li > a:hover {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li.active > a {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+body{
+    padding-top: 70px;
+}
+.summary{
+    border-left: 5px solid #6E7781;
+}
+li.sidebarTitle{
+    color: #363E47;
+}
+
 @media screen and (max-width: 1920px){
     #tg-sb-sidebar{
         position: sticky;
-        top: 0;
+        top: 9%; /*previously, 0*/
         margin-bottom: 30px;
     }
     #toc{
@@ -1207,55 +1256,75 @@ a[href^="http://"]:after, a[href^="https://"]:after {
             <h1 class="post-title-main">Splunk</h1>
         </div>
             
-                <div class="summary">Get Splunk alerts into Squadcast</div>
+                <div class="summary">Route alerts from Splunk into Squadcast</div>
             
 
                 
 
-            <p>Follow the steps below to configure a service so as to extract its related alert data from Splunk. Squadcast will then process this information to create incidents for this service as per your preferences.</p>
+            <p>This document will help you integrate Splunk with Squadcast.</p>
 
-<h2 id="using-splunk-as-an-alert-source">Using Splunk as an Alert Source</h2>
+<p>Splunk is used to search, analyze and visualize the machine-generated data gathered from the websites, applications, sensors, devices etc. which make up your IT infrastructure and business. Route detailed event information from Splunk to the right users in Squadcast.</p>
+
+<h2 id="how-to-integrate-splunk-with-squadcast">How to integrate Splunk with Squadcast</h2>
+
+<h3 id="in-squadcast-using-splunk-as-an-alert-source">In Squadcast: Using Splunk as an Alert Source</h3>
 
 <p>On the <strong>Sidebar</strong>, click on <strong>Services</strong>.</p>
 
-<p>You can either choose to use existing service or <a href="adding-a-service.html">create a new service</a></p>
+<p><img src="images/integration_1-1.png" alt="" /></p>
 
-<p>Now, click on the corresponding <strong>Alert Sources</strong> button.</p>
+<p>Select an existing Service or <strong>Add service</strong></p>
+
+<p><img src="images/integration_1-2.png" alt="" /></p>
+
+<p>Click the corresponding <strong>Alert Sources</strong></p>
 
 <p><img src="images/integration_1.png" alt="" /></p>
 
-<p>Select <strong>Splunk</strong> from  <strong>Alert Source</strong> drop down and copy the Webhook URL shown.</p>
+<p>Search for <strong>Splunk</strong> from the <strong>Alert Source</strong> drop down menu and copy the webhook URL shown.</p>
 
 <p><img src="images/splunk_1.png" alt="" /></p>
 
-<h2 id="create-a-squadcast-webhook-alert-in-splunk">Create a Squadcast webhook alert in Splunk</h2>
+<h3 id="in-splunk-create-a-squadcast-webhook-alert">In Splunk: Create a Squadcast webhook alert</h3>
 
-<p>In your Splunk dashboard, click on <strong>Search &amp; Reporting</strong> under <strong>Apps</strong>.</p>
+<p>In the Splunk dashboard, click on <strong>Search &amp; Reporting</strong> under <strong>Apps</strong></p>
 
-<p><img src="images/splunk_2.png" alt="" style="max-width: 30%" /></p>
+<p><img src="images/splunk_2.png" alt="" /></p>
 
-<p>Do the required search and then click on <strong>Save As</strong> and select <strong>Alert</strong>.</p>
+<p>Run your desired search query in the logs (a) and then click on <strong>Save As</strong> and select <strong>Alert</strong> (b)</p>
 
 <p><img src="images/splunk_3.png" alt="" /></p>
 
-<p>In the <strong>Save As Alert</strong> box, enter the title, description and other Trigger Conditions and under <strong>Trigger Actions</strong>, click on the <strong>Add Actions</strong> button and select <strong>Webhook</strong> and enter the webhook url from the previous step under <strong>URL</strong> and click the <strong>Save</strong> button.</p>
+<p>In the <strong>Save As Alert</strong> box, enter the title, description and other Trigger Conditions. You can find more information on what each of these parameters mean in the <a href="https://docs.splunk.com/Documentation/Splunk/8.1.0/Alert/Aboutalerts">Splunk documentation</a>.</p>
+
+<p>Under <strong>Trigger Actions</strong>, click on  <strong>Add Actions</strong> and select <strong>Webhook</strong></p>
+
+<p>Paste the copied webhook URL from Squadcast under <strong>URL</strong> and click on <strong>Save</strong></p>
 
 <p><img src="images/splunk_4.png" alt="" /></p>
 
-<p>That’s it! The Splunk Integration is completed and whenever an alert is fired for your search query, an alert will get created in Squadcast as well.</p>
+<p>That’s it! Your Splunk Integration is now complete. Whenever an alert is fired for your search query, an incident will be created in Squadcast.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>FAQ:</b>
+<br /><br /><p>Q: If an alert gets resolved in Splunk, does Splunk send auto-resolve signals to Squadcast?<br />
+A: No, Splunk does not send auto-resolve signals to Squadcast. Hence, Squadcast incidents from Splunk should be resolved manually.</p>
+</div>
 
 
                 <div class="tags">
                     
-                    <b>Tags: </b>
+                    <h2>Related Documents </h2>
                     
                     
                     
-                    <a href="tag_integration.html" class="btn btn-default navbar-btn cursorNorm" role="button">integration</a>
+                    
+                    <a href="Slack-as-an-Alert-Source.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">Slack as an Alert Source<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     
-                    <a href="tag_splunk.html" class="btn btn-default navbar-btn cursorNorm" role="button">splunk</a>
+                    
+                    <a href="Sqreen.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">Sqreen<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     
@@ -1295,9 +1364,17 @@ $('#toc').on('click', 'a', function() {
     if (window.innerWidth>1024){
         window.addEventListener('scroll', function(){
             if (window.scrollY>=73){
-                document.getElementById('toc').setAttribute('style', 'position: fixed; top: 0; margin-top: 30px;');
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'position: fixed; top: 9%; margin-top: 20px;'); /*previously, top: 0*/
+                }
             }else{
-                document.getElementById('toc').setAttribute('style', 'margin-top: 30px; position: fixed;');
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'margin-top: 20px; position: fixed;');
+                }
             }
         }); 
     }
@@ -1308,9 +1385,9 @@ $('#toc').on('click', 'a', function() {
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
+                    <p><img src="images/company_logo.png" alt="Company logo"/></p>
                &copy;2020 Squadcast. All rights reserved. <br />
- Site last generated: May 6, 2020 <br />
-<p><img src="images/company_logo.png" alt="Company logo"/></p>
+<!--  Site last generated: Dec 18, 2020 <br /> -->
                 </div>
             </div>
             <script>
